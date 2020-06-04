@@ -1,4 +1,9 @@
-baseURL = "http://example.org/"
+baseURL = "/yt-blog/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "yt project blog"
 theme = "dream"
+
+
+[params]
+  avatar = "/img/yt_logo.svg"
+  author = "the yt project"
