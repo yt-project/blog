@@ -3,7 +3,7 @@ title: Line Integral Convolution for Vector Field Visualization
 date: 2020-06-04T14:14:29-05:00
 lastmod: 2020-06-04T14:14:29-05:00
 author: Suoqing Ji
-cover: /img/line-integral/lic_velocity.png
+cover: /yt-blog/img/line-integral/lic_velocity.png
 categories: ["category1"]
 tags: ["annotations", "SlicePlot"]
 # showcase: true
@@ -49,7 +49,7 @@ is overlaid onto the original density slice plot. Adjusting lim will "squeeze"
 the range of LIC magnitude and change the visibility of LIC plot. The code will
 produce the following image:
 
-![line integral velocity](/img/line-integral/lic_velocity.png)
+![line integral velocity](/yt-blog/img/line-integral/lic_velocity.png)
 
 There are [more parameters](http://yt-project.org/docs/dev/visualizing/callbacks.html#overplot-line-integral-convolution) 
 you can play with to generate a perfect image. For
@@ -69,4 +69,4 @@ s.save()
 ```
 and the following image is produced:
 
-![line integral BField](/img/line-integral/lic_Bfield.png)
+![line integral BField](/yt-blog/img/line-integral/lic_Bfield.png)
