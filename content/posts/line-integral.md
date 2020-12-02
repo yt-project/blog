@@ -7,7 +7,6 @@ cover: /img/line-integral/lic_velocity.png
 categories: ["category1"]
 tags: ["annotations", "SlicePlot"]
 # showcase: true
-draft: true
 ---
 
 ### Line Integral Convolution for Vector Field Visualization
