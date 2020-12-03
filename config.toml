@@ -5,5 +5,5 @@ theme = "dream"
 
 
 [params]
-  avatar = "/img/yt_logo.svg"
+  avatar = "img/yt_logo.svg"
   author = "the yt project"
