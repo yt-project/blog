@@ -1,15 +1,15 @@
 ---
 title: Line Integral Convolution for Vector Field Visualization
-date: 2020-06-04T14:14:29-05:00
+date: 2015-08-20T14:14:29-05:00
 lastmod: 2020-06-04T14:14:29-05:00
 author: Suoqing Ji
 cover: img/line-integral/lic_velocity.png
-categories: ["category1"]
+categories: ["tutorial"]
 tags: ["annotations", "SlicePlot"]
 # showcase: true
 ---
 
-### Line Integral Convolution for Vector Field Visualization
+How to visualize a line integral convolution for a vector field with yt
 
 <!--more-->
 
