@@ -1,0 +1,92 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="ie=edge"><title>The first yt development workshop! | yt project blog</title><meta name=author content="Matthew Turk"><meta name=description content="On March 6-8, 2013 we held a yt development workshop at UCSC. Let&amp;rsquo;s talk about it!"><meta name=generator content="Hugo 0.71.1"><link rel=canonical href=https://munkm.github.io/yt-blog/posts/devworkshop2013/><meta property="og:title" content="The first yt development workshop!"><meta property="og:description" content="On March 6-8, 2013 we held a yt development workshop at UCSC. Let&rsquo;s talk about
+it!"><meta property="og:type" content="article"><meta property="og:url" content="https://munkm.github.io/yt-blog/posts/devworkshop2013/"><meta property="article:published_time" content="2013-03-18T17:04:06-06:00"><meta property="article:modified_time" content="2020-12-03T17:04:06-06:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="The first yt development workshop!"><meta name=twitter:description content="On March 6-8, 2013 we held a yt development workshop at UCSC. Let&rsquo;s talk about
+it!"><link rel=stylesheet href=https://munkm.github.io/yt-blog/css/semantic.min.css><link rel=stylesheet href=https://munkm.github.io/yt-blog/css/icomoon.css><link rel=stylesheet href=https://munkm.github.io/yt-blog/css/OverlayScrollbars.min.css><link rel=stylesheet href=https://munkm.github.io/yt-blog/css/github-markdown.css><link rel=stylesheet href=https://munkm.github.io/yt-blog/css/site.css><style>a:hover{text-decoration:underline}</style></head><body class=default><nav class="ui secondary menu dream-menu"><div class=item><i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i></div><div class=item><i class="large link home icon" title=Home onclick="window.location.href='https:\/\/munkm.github.io\/yt-blog\/'"></i></div><div class=item><i class="large link icon theme-switch" onclick=themeSwitch()></i></div></nav><div class=flip-container><div class=flipper><section class=front><div class=dream-max-width><div class="ui centered relaxed grid dream-grid"><div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id=dream-save-post-as-img><section class="ui top attached segment"><header><h1 class="ui large header">The first yt development workshop!<div class="sub header">@
+<a href=https://matthewturk.github.io/ target=_blank>Matthew Turk</a>
+|
+Monday, Mar 18, 2013
+| 5 minute read
+| Update at
+Thursday, Dec 3, 2020</div></h1></header><article class=main><p>On March 6-8, 2013 we held a yt development workshop at UCSC. Let&rsquo;s talk about
+it!</p><h1 id=the-first-development-workshop>The First Development Workshop</h1><p>March 6-8, we held a yt-dev workshop at UCSC. Thanks to everyone who attended,
+as well as Joel Primack and <a href=http://hipacc.ucsc.edu/>HIPACC</a> for sponsoring
+us. This was the <em>first</em> development-oriented workshop we&rsquo;ve ever held, and it
+was a gigantic success! To see a full photo album, visit our
+<a href=https://plus.google.com/107728486871834552760/posts/BGi1ah4cNMh>Google Plus Page</a>.</p><figure><img src=https://munkm.github.io/yt-blog/img/devworkshop2013/devworkshop.jpg width=400 height=300><figcaption><h4>Exciting development crowd!</h4></figcaption></figure><p>With local organization by Nathan Goldbaum, Chris Moody and Ji-hoon Kim at
+UCSC, over twenty people were able to participate, working on a diverse set of
+projects. The workshop was structured around introducing topics through
+lightning talks and then sprinting on those topics during breakout sessions.</p><p>The lightning talks were set up to be one slide (or ten notebook cells, if you
+used the IPython notebook!) presenting a concept with ideas for going into the
+breakout sessions. These were isolated ideas &ndash; shovel-ready, with working
+guidelines. We had talks from John ZuHone, Casey Stark, Kacper Kowalik,
+Cameron Hummels, Doug Rudd, Britton Smith, Jeff Oishi, Nathan Goldbaum and
+Chris Moody. Following this, we split into a series of breakout groups.</p><p>We also had talks from Joel Primack presenting the AGORA project and from Hari
+Krishnan about his work to integrate yt and VisIt. On the final day, we also
+had a show-and-tell, where a member of each working group presented what they
+worked on and what they accomplished.</p><h2 id=grid-data-format>Grid Data Format</h2><p>This breakout group focused on building a portable library in C for reading and
+writing data that takes the form of structured, rectilinear grids. The idea
+here is to adhere to the
+<a href=https://bitbucket.org/yt_analysis/grid_data_format>GDF format</a>, which specifies a
+self-describing HDF5 layout for files. By developing this portable library,
+the group hopes to be able to use yt to
+<a href=http://blog.yt-project.org/post/Simple_Grid_Refinement.html>make initial conditions</a>,
+write them out
+in the already-existing GDF writer in yt, and then link simulation codes
+against this library to read them back in and run simulations. It would also
+enable directly converting between simulation code outputs.</p><h2 id=units-and-arrays>Units and Arrays</h2><p>This group ambitiously set out the task of incorporating Casey&rsquo;s library
+<a href=http://caseywstark.com/blog/2012/code-release-dimensionful/>dimensionful</a>
+into yt. This library utilizes SymPy for developing a units system that can
+convert between known units as well as affiliate those units with array
+objects. The hope here is to eliminate much of the existing unit handling and
+field duplication (i.e., CellMass and CellMassMsun) and provide easier methods
+for deploying unit conversions. This work may take some time to integrate into
+yt 3.0, but it will be a feature of that codebase eventually. By the end of
+the workshop, this group had a working implementation.</p><h2 id=halo-catalogs>Halo Catalogs</h2><p>The current system for handling halos and halo catalogs in yt is a bit <em>ad
+hoc</em>, where objects are passed around and data held onto for some time. This
+is inefficient and doesn&rsquo;t lend itself well to agile and flexible halo finding.
+This working group developed a rough outline of a YTEP that described halo
+finding and halo catalogs as a state of <em>flow</em> &ndash; rather than performing
+analysis after the fact, analysis will now be performed during the course of
+halo finding. This will be done by supplying a set of callbacks that will be
+executed on each halo in turn. An ontology for describing halo catalogs was
+also developed, which is being fleshed out in a YTEP.</p><h2 id=octree-improvements>Octree Improvements</h2><p>Some representatives of the NMSU-ART code were present at the workshop. This
+working group focused on cleaning up the rough edes of the Octree support in
+yt-3.0, as well as applying it to some actual data. Chris spent quite a bit of
+time polishing up star particle IO, fixing rough corners in the octree code,
+and testing things. Kenza gave a show-and-tell talk on the final day showing
+how she was able to load up a galaxy formation simulation and plot streamlines,
+all in a few lines of code.</p><h2 id=artio>ARTIO</h2><p>For extremely large Octree datasets, it&rsquo;s simply infeasible to load the entire
+mesh into memory. The ARTIO working group worked to develop opaque data chunks
+in yt-3.0, so that yt can iterate over chunks, build data objects, perform
+processing, and conduct visualization all without needing to know how the data
+is laid out on disk or knowing anything about the mesh at all! This is an
+extremely powerful concept, and will hopefully present a number of
+opportunities for applying this elsewhere in the future.</p><h2 id=volume-rendering>Volume Rendering</h2><p>The method by which volume renderings are created in yt is a bit clunky right
+now. Many arguments are pushed into the constructor for the Camera object, and
+then there&rsquo;s a limited flexibility after that. This working group built off of
+the still-pending YTEP-0010 to build a new system for creating volume
+renderings with a stateful Scene, cameras that move, volumes that don&rsquo;t, and so
+on. Cameron, Mark and Will demoed a working implementation of a Scene object
+on the final day. Jill also was able to demo on the final day some initial
+integration of yt with Blender &ndash; showing how to script the camera path via
+Python, display surfaces extracted with yt, and make movies from them.</p><h2 id=thank-you>Thank you!</h2><p>Thanks to everyone who attended! It was a great time, and I think we&rsquo;re all
+excited to have another one sometime in the future.</p></article></section><footer class="ui attached segment dream-tags" data-html2canvas-ignore><a class="ui label" href=https://munkm.github.io/yt-blog/tags/community title=community>community</a><div class="ui label" style=float:right;cursor:pointer onclick=savePostAsImg()><i class="save icon"></i>Save as image</div></footer></div><aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside"><div class="ui segment toc"><nav id=TableOfContents><ul><li><a href=#grid-data-format>Grid Data Format</a></li><li><a href=#units-and-arrays>Units and Arrays</a></li><li><a href=#halo-catalogs>Halo Catalogs</a></li><li><a href=#octree-improvements>Octree Improvements</a></li><li><a href=#artio>ARTIO</a></li><li><a href=#volume-rendering>Volume Rendering</a></li><li><a href=#thank-you>Thank you!</a></li></ul></nav></div><article class=dream-header><section class="ui top attached center aligned segment"><div class="ui small circular image"><img src=https://munkm.github.io/yt-blog/img/yt_logo.svg></div><div class="ui medium header">the yt project's blog<div class="sub header" style=margin-top:.5rem></div></div><div class="ui horizontal list"><a class=item href=https://munkm.github.io/yt-blog/posts><i class="archive icon" title=Archives></i></a><a class=item href=https://munkm.github.io/yt-blog/tags><i class="tags icon" title="All Tags"></i></a><a class=item href=https://munkm.github.io/yt-blog/categories><i class="th list icon" title="All Categories"></i></a></div></section><section class="ui attached center aligned segment dream-tags"><a class="ui label" href=https://munkm.github.io/yt-blog/tags/annotations/ title=Annotations>Annotations</a>
+<a class="ui label" href=https://munkm.github.io/yt-blog/tags/community/ title=Community>Community</a>
+<a class="ui label" href=https://munkm.github.io/yt-blog/tags/features/ title=Features>Features</a>
+<a class="ui label" href=https://munkm.github.io/yt-blog/tags/new-feature/ title="New Feature">New Feature</a>
+<a class="ui label" href=https://munkm.github.io/yt-blog/tags/particles/ title=Particles>Particles</a>
+<a class="ui label" href=https://munkm.github.io/yt-blog/tags/releases/ title=Releases>Releases</a>
+<a class="ui label" href=https://munkm.github.io/yt-blog/tags/sliceplot/ title=Sliceplot>Sliceplot</a>
+<a class="ui label" href=https://munkm.github.io/yt-blog/tags/surfaces/ title=Surfaces>Surfaces</a>
+<a class="ui label" href=https://munkm.github.io/yt-blog/tags/tutorial/ title=Tutorial>Tutorial</a></section><section class="ui attached segment dream-categories"><div class="ui accordion"><div class=title><i class="dropdown icon"></i><a class=item href=https://munkm.github.io/yt-blog/categories/development/ title=Development>Development</a></div><div class=content><div class="ui list"><div class=item><div class=content><a class=item href=https://munkm.github.io/yt-blog/posts/governance/>Much Ado About Governance</a></div></div><div class=item><div class=content><a class=item href=https://munkm.github.io/yt-blog/posts/relicensing/>Relicensing yt from GPLv3 to BSD</a></div></div><div class=item><div class=content><a class=item href=https://munkm.github.io/yt-blog/posts/devworkshop2013/>The first yt development workshop!</a></div></div><div class=item><div class=content><a class=item href=https://munkm.github.io/yt-blog/posts/yt-25/>yt 2.5 released!</a></div></div><div class=item><div class=content><a class=item href=https://munkm.github.io/yt-blog/posts/devworkshopannounce2013/>Announcing the 2013 yt development workshop</a></div></div><div class=item><div class=content><a class=item href=https://munkm.github.io/yt-blog/posts/2012-review/>2012 In Review</a></div></div></div></div><div class=title><i class="dropdown icon"></i><a class=item href=https://munkm.github.io/yt-blog/categories/tutorial/ title=Tutorial>Tutorial</a></div><div class=content><div class="ui list"><div class=item><div class=content><a class=item href=https://munkm.github.io/yt-blog/posts/line-integral/>Line Integral Convolution for Vector Field Visualization</a></div></div><div class=item><div class=content><a class=item href=https://munkm.github.io/yt-blog/posts/objexporter/>Obj File Exporter for Surfaces</a></div></div><div class=item><div class=content><a class=item href=https://munkm.github.io/yt-blog/posts/particle-gen/>Particle Generators</a></div></div><div class=item><div class=content><a class=item href=https://munkm.github.io/yt-blog/posts/sketchfab/>3D Surfaces and Sketchfab</a></div></div></div></div></div></section><section class="ui attached segment header-socials"><nav class="ui secondary menu dream-menu dream-socials"></nav></section><section class="ui bottom attached center aligned segment"><p>© 2020 yt project blog</p><p>Powered by <a href=https://gohugo.io/ target=_blank>Hugo</a> with theme <a href=https://github.com/g1eny0ung/hugo-theme-dream target=_blank>Dream</a>.</p></section></article></aside></div></div></section><section class=back><div class=dream-max-width><div class="ui centered relaxed grid dream-grid dream-back"><section class="sixteen wide mobile eight wide tablet four wide computer column dream-column"><article><div class="ui top attached segment"><h3 class="ui header">Social Links</h3></div><div class="ui bottom attached segment"><nav class="ui secondary menu dream-menu dream-socials"></nav></div></article></section><section class="sixteen wide mobile eight wide tablet four wide computer column dream-column"></section></div></div></section></div></div><script>window.backgroundDark=null
+window.backgroundImageDark=null
+window.darkNav=null
+window.hasTwitterEmbed=null
+if(window.hasTwitterEmbed){window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{}
+if(d.getElementById(id))return t
+js=d.createElement(s)
+js.id=id
+js.src='https://platform.twitter.com/widgets.js'
+fjs.parentNode.insertBefore(js,fjs)
+t._e=[]
+t.ready=function(f){t._e.push(f)}
+return t})(document,'script','twitter-wjs')}</script><script src=https://munkm.github.io/yt-blog/js/jquery.min.js></script><script src=https://munkm.github.io/yt-blog/js/semantic.min.js></script><script src=https://munkm.github.io/yt-blog/js/jquery.overlayScrollbars.min.js></script><script src=https://munkm.github.io/yt-blog/js/header.js></script><script src=https://munkm.github.io/yt-blog/js/main.js></script><script src=https://munkm.github.io/yt-blog/js/theme.js></script><script src=https://munkm.github.io/yt-blog/js/html2canvas.min.js></script><script src=https://munkm.github.io/yt-blog/js/post.js></script></body></html>

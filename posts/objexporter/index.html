@@ -1,0 +1,131 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="ie=edge"><title>Obj File Exporter for Surfaces | yt project blog</title><meta name=author content="Jill Naiman"><meta name=description content="How to export surfaces into an obj file (will it blend?!)"><meta name=generator content="Hugo 0.71.1"><link rel=canonical href=https://munkm.github.io/yt-blog/posts/objexporter/><meta property="og:title" content="Obj File Exporter for Surfaces"><meta property="og:description" content="How to export surfaces into an obj file (will it blend?!)"><meta property="og:type" content="article"><meta property="og:url" content="https://munkm.github.io/yt-blog/posts/objexporter/"><meta property="article:published_time" content="2013-03-30T16:56:06-06:00"><meta property="article:modified_time" content="2020-12-03T16:56:06-06:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Obj File Exporter for Surfaces"><meta name=twitter:description content="How to export surfaces into an obj file (will it blend?!)"><link rel=stylesheet href=https://munkm.github.io/yt-blog/css/semantic.min.css><link rel=stylesheet href=https://munkm.github.io/yt-blog/css/icomoon.css><link rel=stylesheet href=https://munkm.github.io/yt-blog/css/OverlayScrollbars.min.css><link rel=stylesheet href=https://munkm.github.io/yt-blog/css/github-markdown.css><link rel=stylesheet href=https://munkm.github.io/yt-blog/css/site.css><style>a:hover{text-decoration:underline}</style></head><body class=default><nav class="ui secondary menu dream-menu"><div class=item><i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i></div><div class=item><i class="large link home icon" title=Home onclick="window.location.href='https:\/\/munkm.github.io\/yt-blog\/'"></i></div><div class=item><i class="large link icon theme-switch" onclick=themeSwitch()></i></div></nav><div class=flip-container><div class=flipper><section class=front><div class=dream-max-width><div class="ui centered relaxed grid dream-grid"><div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id=dream-save-post-as-img><section class="ui top attached segment"><header><h1 class="ui large header">Obj File Exporter for Surfaces<div class="sub header">@
+Jill Naiman
+|
+Saturday, Mar 30, 2013
+| 4 minute read
+| Update at
+Thursday, Dec 3, 2020</div></h1></header><article class=main><p>How to export surfaces into an obj file (will it blend?!)</p><h1 id=obj-file-exporter-for-surfaces>OBJ File Exporter for Surfaces</h1><h3 id=obj-and-mtl-files>OBJ and MTL Files</h3><p>If the ability to maneuver around an isosurface of your 3D simulation in
+<a href=https://sketchfab.com>Sketchfab</a> cost you half a day of work (let&rsquo;s be
+honest, 2 days), prepare to be even less productive. With a new<br><a href=http://en.wikipedia.org/wiki/Wavefront_.obj_file>OBJ file</a>
+exporter, you can now
+upload multiple surfaces of different transparencies in the same file.
+The following code snippet produces two files which contain the vertex info
+(surfaces.obj) and color/transparency info (surfaces.mtl) for a 3D
+galaxy simulation:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Python data-lang=Python>   <span style=color:#f92672>from</span> yt.mods <span style=color:#f92672>import</span> <span style=color:#f92672>*</span>
+
+   pf <span style=color:#f92672>=</span> load(<span style=color:#e6db74>&#34;/data/workshop2012/IsolatedGalaxy/galaxy0030/galaxy0030&#34;</span>)
+   rho <span style=color:#f92672>=</span> [<span style=color:#ae81ff>2e-27</span>, <span style=color:#ae81ff>1e-27</span>]
+   trans <span style=color:#f92672>=</span> [<span style=color:#ae81ff>1.0</span>, <span style=color:#ae81ff>0.5</span>]
+   filename <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;./surfaces&#39;</span>
+
+   sphere <span style=color:#f92672>=</span> pf<span style=color:#f92672>.</span>h<span style=color:#f92672>.</span>sphere(<span style=color:#e6db74>&#34;max&#34;</span>, (<span style=color:#ae81ff>1.0</span>, <span style=color:#e6db74>&#34;mpc&#34;</span>))
+   <span style=color:#66d9ef>for</span> i,r <span style=color:#f92672>in</span> enumerate(rho):
+       surf <span style=color:#f92672>=</span> pf<span style=color:#f92672>.</span>h<span style=color:#f92672>.</span>surface(sphere, <span style=color:#e6db74>&#39;Density&#39;</span>, r)
+       surf<span style=color:#f92672>.</span>export_obj(filename, transparency <span style=color:#f92672>=</span> trans[i], color_field<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;Temperature&#39;</span>, plot_index <span style=color:#f92672>=</span> i)
+</code></pre></div><p>The calling sequence is fairly similar to the <code>export_ply</code> function
+<a href=http://blog.yt-project.org/post/3DSurfacesAndSketchFab.html>previously used</a>
+to export 3D surfaces. However, one can now specify a transparency for each
+surface of interest, and each surface is enumerated in the OBJ files with <code>plot_index</code>.
+This means one could potentially add surfaces to a previously
+created file by setting <code>plot_index</code> to the number of previously written
+surfaces.</p><p>One tricky thing: the header of the OBJ file points to the MTL file (with
+the header command <code>mtllib</code>). This means if you move one or both of the files
+you may have to change the header to reflect their new directory location.</p><h3 id=a-few-more-options>A Few More Options</h3><p>There are a few extra inputs for formatting the surface files you may want to use.</p><p>(1) Setting <code>dist_fac</code> will divide all the vertex coordinates by this factor.
+Default will scale the vertices by the physical bounds of your sphere.</p><p>(2) Setting <code>color_field_max</code> and/or <code>color_field_min</code> will scale the colors
+of all surfaces between this min and max. Default is to scale the colors of each
+surface to their own min and max values.</p><h3 id=uploading-to-sketchfab>Uploading to SketchFab</h3><p>To upload to <a href=http://sketchfab.com>Sketchfab</a> one only needs to zip the
+OBJ and MTL files together, and then upload via your dashboard prompts in
+the usual way. For example, the above script produces
+<a href="https://skfb.ly/5k4j2fdcb?autostart=0&transparent=0&autospin=0&controls=1&watermark=1">this beautiful
+rendering</a></p><h3 id=importing-to-meshlab-and-blender>Importing to MeshLab and Blender</h3><p>The new OBJ formatting will produce multi-colored surfaces in both
+<a href=http://meshlab.sourceforge.net/>MeshLab</a> and <a href=http://www.blender.org/>Blender</a>,
+a feature not possible with the
+<a href=http://blog.yt-project.org/post/3DSurfacesAndSketchFab.html>previous PLY exporter</a>.
+To see colors in MeshLab go to the &ldquo;Render&rdquo; tab and
+select &ldquo;Color -> Per Face&rdquo;. Note in both MeshLab and Blender, unlike Sketchfab, you can&rsquo;t see
+transparencies until you render.</p><h3 id=one-more-option>&mldr;One More Option</h3><p>If you&rsquo;ve started poking around the actual code instead of skipping off to
+lose a few days running around your own simulations
+you may have noticed there are a few more options then those listed above,
+specifically, a few related to something called &ldquo;Emissivity.&rdquo; This allows you
+to output one more type of variable on your surfaces. For example:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Python data-lang=Python>   <span style=color:#f92672>from</span> yt.mods <span style=color:#f92672>import</span> <span style=color:#f92672>*</span>
+
+   pf <span style=color:#f92672>=</span> load(<span style=color:#e6db74>&#34;/data/workshop2012/IsolatedGalaxy/galaxy0030/galaxy0030&#34;</span>)
+   rho <span style=color:#f92672>=</span> [<span style=color:#ae81ff>2e-27</span>, <span style=color:#ae81ff>1e-27</span>]
+   trans <span style=color:#f92672>=</span> [<span style=color:#ae81ff>1.0</span>, <span style=color:#ae81ff>0.5</span>]
+   filename <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;./surfaces&#39;</span>
+
+   <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>_Emissivity</span>(field, data):
+       <span style=color:#66d9ef>return</span> (data[<span style=color:#e6db74>&#39;Density&#39;</span>]<span style=color:#f92672>*</span>data[<span style=color:#e6db74>&#39;Density&#39;</span>]<span style=color:#f92672>*</span>np<span style=color:#f92672>.</span>sqrt(data[<span style=color:#e6db74>&#39;Temperature&#39;</span>]))
+   add_field(<span style=color:#e6db74>&#34;Emissivity&#34;</span>, function<span style=color:#f92672>=</span>_Emissivity, units<span style=color:#f92672>=</span><span style=color:#e6db74>r</span><span style=color:#e6db74>&#34;\rm{g K}/\rm{cm}^{6}&#34;</span>)
+
+   sphere <span style=color:#f92672>=</span> pf<span style=color:#f92672>.</span>h<span style=color:#f92672>.</span>sphere(<span style=color:#e6db74>&#34;max&#34;</span>, (<span style=color:#ae81ff>1.0</span>, <span style=color:#e6db74>&#34;mpc&#34;</span>))
+   <span style=color:#66d9ef>for</span> i,r <span style=color:#f92672>in</span> enumerate(rho):
+       surf <span style=color:#f92672>=</span> pf<span style=color:#f92672>.</span>h<span style=color:#f92672>.</span>surface(sphere, <span style=color:#e6db74>&#39;Density&#39;</span>, r)
+       surf<span style=color:#f92672>.</span>export_obj(filename, transparency <span style=color:#f92672>=</span> trans[i],
+                       color_field<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;Temperature&#39;</span>, emit_field <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;Emissivity&#39;</span>,
+		       plot_index <span style=color:#f92672>=</span> i)
+</code></pre></div><p>will output the same OBJ and MTL as in our previous example, but it will scale
+an emissivity parameter by our new field. Technically, this makes our outputs
+not really OBJ files at all, but a new sort of hybrid file, however we needn&rsquo;t worry
+too much about that for now.</p><p>This parameter is useful if you want to upload your files in Blender and have the
+embedded rendering engine do some approximate ray-tracing on your transparencies
+and emissivities. This does take some slight modifications to the OBJ importer
+scripts in Blender. For example, on a Mac, you would modify the file
+&ldquo;/Applications/Blender/blender.app/Contents/MacOS/2.65/scripts/addons/io_scene_obj/import_obj.py&rdquo;,
+in the function &ldquo;create_materials&rdquo; with:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Python data-lang=Python>                    <span style=color:#66d9ef>elif</span> line_lower<span style=color:#f92672>.</span>startswith(<span style=color:#e6db74>b</span><span style=color:#e6db74>&#39;tr&#39;</span>):  <span style=color:#75715e># translucency</span>
+                        context_material<span style=color:#f92672>.</span>translucency <span style=color:#f92672>=</span> float_func(line_split[<span style=color:#ae81ff>1</span>])
+                    <span style=color:#66d9ef>elif</span> line_lower<span style=color:#f92672>.</span>startswith(<span style=color:#e6db74>b</span><span style=color:#e6db74>&#39;tf&#39;</span>):
+                        <span style=color:#75715e># rgb, filter color, blender has no support for this.</span>
+                        <span style=color:#66d9ef>pass</span>
+                    <span style=color:#66d9ef>elif</span> line_lower<span style=color:#f92672>.</span>startswith(<span style=color:#e6db74>b</span><span style=color:#e6db74>&#39;em&#39;</span>): <span style=color:#75715e># MODIFY: ADD THIS LINE</span>
+                        context_material<span style=color:#f92672>.</span>emit <span style=color:#f92672>=</span> float_func(line_split[<span style=color:#ae81ff>1</span>]) <span style=color:#75715e># MODIFY: THIS LINE TOO</span>
+                    <span style=color:#66d9ef>elif</span> line_lower<span style=color:#f92672>.</span>startswith(<span style=color:#e6db74>b</span><span style=color:#e6db74>&#39;illum&#39;</span>):
+                        illum <span style=color:#f92672>=</span> int(line_split[<span style=color:#ae81ff>1</span>])
+</code></pre></div><p>To use this in Blender, you might create a
+<a href=http://cgcookie.com/blender/2011/08/26/introduction-to-scripting-with-python-in-blender/>Blender script</a>
+like the following:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Python data-lang=Python>   <span style=color:#f92672>import</span> bpy
+   <span style=color:#f92672>from</span> math <span style=color:#f92672>import</span> <span style=color:#f92672>*</span>
+
+   bpy<span style=color:#f92672>.</span>ops<span style=color:#f92672>.</span>import_scene<span style=color:#f92672>.</span>obj(filepath<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;./surfaces.obj&#39;</span>) <span style=color:#75715e># will use new importer</span>
+
+   <span style=color:#75715e># set up lighting = indirect</span>
+   bpy<span style=color:#f92672>.</span>data<span style=color:#f92672>.</span>worlds[<span style=color:#e6db74>&#39;World&#39;</span>]<span style=color:#f92672>.</span>light_settings<span style=color:#f92672>.</span>use_indirect_light <span style=color:#f92672>=</span> True
+   bpy<span style=color:#f92672>.</span>data<span style=color:#f92672>.</span>worlds[<span style=color:#e6db74>&#39;World&#39;</span>]<span style=color:#f92672>.</span>horizon_color <span style=color:#f92672>=</span> [<span style=color:#ae81ff>0.0</span>, <span style=color:#ae81ff>0.0</span>, <span style=color:#ae81ff>0.0</span>] <span style=color:#75715e># background = black</span>
+   <span style=color:#75715e># have to use approximate, not ray tracing for emitting objects ...</span>
+   <span style=color:#75715e>#   ... for now...</span>
+   bpy<span style=color:#f92672>.</span>data<span style=color:#f92672>.</span>worlds[<span style=color:#e6db74>&#39;World&#39;</span>]<span style=color:#f92672>.</span>light_settings<span style=color:#f92672>.</span>gather_method <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;APPROXIMATE&#39;</span>
+   bpy<span style=color:#f92672>.</span>data<span style=color:#f92672>.</span>worlds[<span style=color:#e6db74>&#39;World&#39;</span>]<span style=color:#f92672>.</span>light_settings<span style=color:#f92672>.</span>indirect_factor<span style=color:#f92672>=</span><span style=color:#ae81ff>20.</span> <span style=color:#75715e># turn up all emiss</span>
+
+   <span style=color:#75715e># set up camera to be on -x axis, facing toward your object</span>
+   scene <span style=color:#f92672>=</span> bpy<span style=color:#f92672>.</span>data<span style=color:#f92672>.</span>scenes[<span style=color:#e6db74>&#34;Scene&#34;</span>]
+   scene<span style=color:#f92672>.</span>camera<span style=color:#f92672>.</span>location <span style=color:#f92672>=</span> [<span style=color:#f92672>-</span><span style=color:#ae81ff>0.12</span>, <span style=color:#ae81ff>0.0</span>, <span style=color:#ae81ff>0.0</span>] <span style=color:#75715e># location</span>
+   scene<span style=color:#f92672>.</span>camera<span style=color:#f92672>.</span>rotation_euler <span style=color:#f92672>=</span> [radians(<span style=color:#ae81ff>90.</span>), <span style=color:#ae81ff>0.0</span>, radians(<span style=color:#f92672>-</span><span style=color:#ae81ff>90.</span>)] <span style=color:#75715e># face to (0,0,0)</span>
+
+   <span style=color:#75715e># render</span>
+   scene<span style=color:#f92672>.</span>render<span style=color:#f92672>.</span>filepath <span style=color:#f92672>=</span><span style=color:#e6db74>&#39;/Users/jillnaiman/surfaces_blender&#39;</span> <span style=color:#75715e># needs full path</span>
+   bpy<span style=color:#f92672>.</span>ops<span style=color:#f92672>.</span>render<span style=color:#f92672>.</span>render(write_still<span style=color:#f92672>=</span>True)
+</code></pre></div><p>This above bit of code would produce an image like so:</p><figure><img src=https://munkm.github.io/yt-blog/img/objexporter/surfaces_blender.png><figcaption><h4>Our cool image</h4></figcaption></figure><p>Note that the hottest stuff is brightly shining, while the cool stuff is less so
+(making the inner isodensity contour barely visible from the outside of the surfaces).</p><p>If the Blender image caught your fancy, you&rsquo;ll be happy to know there is a greater
+integration of Blender and yt in the works, so stay tuned!</p></article></section><footer class="ui attached segment dream-tags" data-html2canvas-ignore><a class="ui label" href=https://munkm.github.io/yt-blog/tags/new-feature title="new feature">new feature</a>
+<a class="ui label" href=https://munkm.github.io/yt-blog/tags/surfaces title=surfaces>surfaces</a>
+<a class="ui label" href=https://munkm.github.io/yt-blog/tags/tutorial title=tutorial>tutorial</a><div class="ui label" style=float:right;cursor:pointer onclick=savePostAsImg()><i class="save icon"></i>Save as image</div></footer></div><aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside"><div class="ui segment toc"><nav id=TableOfContents><ul><li><ul><li><a href=#obj-and-mtl-files>OBJ and MTL Files</a></li><li><a href=#a-few-more-options>A Few More Options</a></li><li><a href=#uploading-to-sketchfab>Uploading to SketchFab</a></li><li><a href=#importing-to-meshlab-and-blender>Importing to MeshLab and Blender</a></li><li><a href=#one-more-option>&mldr;One More Option</a></li></ul></li></ul></nav></div><article class=dream-header><section class="ui top attached center aligned segment"><div class="ui small circular image"><img src=https://munkm.github.io/yt-blog/img/yt_logo.svg></div><div class="ui medium header">the yt project's blog<div class="sub header" style=margin-top:.5rem></div></div><div class="ui horizontal list"><a class=item href=https://munkm.github.io/yt-blog/posts><i class="archive icon" title=Archives></i></a><a class=item href=https://munkm.github.io/yt-blog/tags><i class="tags icon" title="All Tags"></i></a><a class=item href=https://munkm.github.io/yt-blog/categories><i class="th list icon" title="All Categories"></i></a></div></section><section class="ui attached center aligned segment dream-tags"><a class="ui label" href=https://munkm.github.io/yt-blog/tags/annotations/ title=Annotations>Annotations</a>
+<a class="ui label" href=https://munkm.github.io/yt-blog/tags/community/ title=Community>Community</a>
+<a class="ui label" href=https://munkm.github.io/yt-blog/tags/features/ title=Features>Features</a>
+<a class="ui label" href=https://munkm.github.io/yt-blog/tags/new-feature/ title="New Feature">New Feature</a>
+<a class="ui label" href=https://munkm.github.io/yt-blog/tags/particles/ title=Particles>Particles</a>
+<a class="ui label" href=https://munkm.github.io/yt-blog/tags/releases/ title=Releases>Releases</a>
+<a class="ui label" href=https://munkm.github.io/yt-blog/tags/sliceplot/ title=Sliceplot>Sliceplot</a>
+<a class="ui label" href=https://munkm.github.io/yt-blog/tags/surfaces/ title=Surfaces>Surfaces</a>
+<a class="ui label" href=https://munkm.github.io/yt-blog/tags/tutorial/ title=Tutorial>Tutorial</a></section><section class="ui attached segment dream-categories"><div class="ui accordion"><div class=title><i class="dropdown icon"></i><a class=item href=https://munkm.github.io/yt-blog/categories/development/ title=Development>Development</a></div><div class=content><div class="ui list"><div class=item><div class=content><a class=item href=https://munkm.github.io/yt-blog/posts/governance/>Much Ado About Governance</a></div></div><div class=item><div class=content><a class=item href=https://munkm.github.io/yt-blog/posts/relicensing/>Relicensing yt from GPLv3 to BSD</a></div></div><div class=item><div class=content><a class=item href=https://munkm.github.io/yt-blog/posts/devworkshop2013/>The first yt development workshop!</a></div></div><div class=item><div class=content><a class=item href=https://munkm.github.io/yt-blog/posts/yt-25/>yt 2.5 released!</a></div></div><div class=item><div class=content><a class=item href=https://munkm.github.io/yt-blog/posts/devworkshopannounce2013/>Announcing the 2013 yt development workshop</a></div></div><div class=item><div class=content><a class=item href=https://munkm.github.io/yt-blog/posts/2012-review/>2012 In Review</a></div></div></div></div><div class=title><i class="dropdown icon"></i><a class=item href=https://munkm.github.io/yt-blog/categories/tutorial/ title=Tutorial>Tutorial</a></div><div class=content><div class="ui list"><div class=item><div class=content><a class=item href=https://munkm.github.io/yt-blog/posts/line-integral/>Line Integral Convolution for Vector Field Visualization</a></div></div><div class=item><div class=content><a class=item href=https://munkm.github.io/yt-blog/posts/objexporter/>Obj File Exporter for Surfaces</a></div></div><div class=item><div class=content><a class=item href=https://munkm.github.io/yt-blog/posts/particle-gen/>Particle Generators</a></div></div><div class=item><div class=content><a class=item href=https://munkm.github.io/yt-blog/posts/sketchfab/>3D Surfaces and Sketchfab</a></div></div></div></div></div></section><section class="ui attached segment header-socials"><nav class="ui secondary menu dream-menu dream-socials"></nav></section><section class="ui bottom attached center aligned segment"><p>© 2020 yt project blog</p><p>Powered by <a href=https://gohugo.io/ target=_blank>Hugo</a> with theme <a href=https://github.com/g1eny0ung/hugo-theme-dream target=_blank>Dream</a>.</p></section></article></aside></div></div></section><section class=back><div class=dream-max-width><div class="ui centered relaxed grid dream-grid dream-back"><section class="sixteen wide mobile eight wide tablet four wide computer column dream-column"><article><div class="ui top attached segment"><h3 class="ui header">Social Links</h3></div><div class="ui bottom attached segment"><nav class="ui secondary menu dream-menu dream-socials"></nav></div></article></section><section class="sixteen wide mobile eight wide tablet four wide computer column dream-column"></section></div></div></section></div></div><script>window.backgroundDark=null
+window.backgroundImageDark=null
+window.darkNav=null
+window.hasTwitterEmbed=null
+if(window.hasTwitterEmbed){window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{}
+if(d.getElementById(id))return t
+js=d.createElement(s)
+js.id=id
+js.src='https://platform.twitter.com/widgets.js'
+fjs.parentNode.insertBefore(js,fjs)
+t._e=[]
+t.ready=function(f){t._e.push(f)}
+return t})(document,'script','twitter-wjs')}</script><script src=https://munkm.github.io/yt-blog/js/jquery.min.js></script><script src=https://munkm.github.io/yt-blog/js/semantic.min.js></script><script src=https://munkm.github.io/yt-blog/js/jquery.overlayScrollbars.min.js></script><script src=https://munkm.github.io/yt-blog/js/header.js></script><script src=https://munkm.github.io/yt-blog/js/main.js></script><script src=https://munkm.github.io/yt-blog/js/theme.js></script><script src=https://munkm.github.io/yt-blog/js/html2canvas.min.js></script><script src=https://munkm.github.io/yt-blog/js/post.js></script></body></html>
