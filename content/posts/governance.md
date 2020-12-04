@@ -1,13 +1,14 @@
 ---
-title: Governance
+title: Much Ado About Governance
 date: 2014-10-10T16:19:10-06:00
 lastmod: 2020-12-03T16:19:10-06:00
-author: Matthew turk
+author: Matthew Turk
 authorlink: https://matthewturk.github.io/
-cover: /img/cover.jpg
+cover: /img/random/trees.jpg
 categories:
   - development
-draft: true
+tags:
+  - community
 ---
 
 A new post about our project's governance!

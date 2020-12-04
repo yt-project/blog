@@ -2,14 +2,13 @@
 title: The first yt development workshop! 
 date: 2013-03-18T17:04:06-06:00
 lastmod: 2020-12-03T17:04:06-06:00
-author: Matthew turk
+author: Matthew Turk
 authorlink: https://matthewturk.github.io/
-cover: /img/cover.jpg
+cover: /img/devworkshop2013/devworkshop.jpg
 categories:
   - development
 tags:
   - community
-draft: true
 ---
 
 On March 6-8, 2013 we held a yt development workshop at UCSC. Let's talk about
@@ -17,20 +16,19 @@ it!
 
 <!--more-->
 
-==============================
 The First Development Workshop
 ==============================
 
 March 6-8, we held a yt-dev workshop at UCSC.  Thanks to everyone who attended,
-as well as Joel Primack and `HIPACC <http://hipacc.ucsc.edu/>`_ for sponsoring
+as well as Joel Primack and [HIPACC](http://hipacc.ucsc.edu/) for sponsoring
 us.  This was the *first* development-oriented workshop we've ever held, and it
 was a gigantic success!  To see a full photo album, visit our 
-`Google Plus Page <https://plus.google.com/107728486871834552760/posts/BGi1ah4cNMh>`_.
+[Google Plus Page](https://plus.google.com/107728486871834552760/posts/BGi1ah4cNMh).
 
-.. attachment-image:: devworkshop.jpg
-   :width: 400
-   :height: 300
-   :align: right
+{{< figure src="/img/devworkshop2013/devworkshop.jpg" 
+           title="Exciting development crowd!" 
+           height=300
+           width=400 >}}
 
 With local organization by Nathan Goldbaum, Chris Moody and Ji-hoon Kim at
 UCSC, over twenty people were able to participate, working on a diverse set of
@@ -54,11 +52,12 @@ Grid Data Format
 
 This breakout group focused on building a portable library in C for reading and
 writing data that takes the form of structured, rectilinear grids.  The idea
-here is to adhere to the `GDF format
-<https://bitbucket.org/yt_analysis/grid_data_format>`_, which specifies a
+here is to adhere to the 
+[GDF format](https://bitbucket.org/yt_analysis/grid_data_format), which specifies a
 self-describing HDF5 layout for files.  By developing this portable library,
-the group hopes to be able to use yt to `make initial conditions
-<http://blog.yt-project.org/post/Simple_Grid_Refinement.html>`_, write them out
+the group hopes to be able to use yt to 
+[make initial conditions](http://blog.yt-project.org/post/Simple_Grid_Refinement.html), 
+write them out
 in the already-existing GDF writer in yt, and then link simulation codes
 against this library to read them back in and run simulations.  It would also
 enable directly converting between simulation code outputs.
@@ -67,7 +66,7 @@ Units and Arrays
 ----------------
 
 This group ambitiously set out the task of incorporating Casey's library
-`dimensionful <http://caseywstark.com/blog/2012/code-release-dimensionful/>`_
+[dimensionful](http://caseywstark.com/blog/2012/code-release-dimensionful/)
 into yt.  This library utilizes SymPy for developing a units system that can
 convert between known units as well as affiliate those units with array
 objects.  The hope here is to eliminate much of the existing unit handling and

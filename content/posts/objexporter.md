@@ -1,39 +1,36 @@
 ---
-title: Objexporter
+title: Obj File Exporter for Surfaces
 date: 2013-03-30T16:56:06-06:00
 lastmod: 2020-12-03T16:56:06-06:00
 author: Jill Naiman
-cover: /img/cover.jpg
+cover: /img/objexporter/surfaces_blender.png
 categories:
   - tutorial
 tags:
   - new feature
-  - isosurfaces
+  - surfaces
   - tutorial 
-draft: true
 ---
 
 How to export surfaces into an obj file (will it blend?!) 
 
 <!--more-->
 
-OBJ File Exporter for Surfaces
-==============================
+# OBJ File Exporter for Surfaces
 
-OBJ and MTL Files
------------------
+### OBJ and MTL Files
 
 If the ability to maneuver around an isosurface of your 3D simulation in
-`Sketchfab <https://sketchfab.com>`_ cost you half a day of work (let's be
-honest, 2 days), prepare to be even less productive.  With a new  `OBJ file
-<http://en.wikipedia.org/wiki/Wavefront_.obj_file>`_ exporter, you can now
+[Sketchfab](https://sketchfab.com) cost you half a day of work (let's be
+honest, 2 days), prepare to be even less productive.  With a new  
+[OBJ file](http://en.wikipedia.org/wiki/Wavefront_.obj_file) 
+exporter, you can now
 upload multiple surfaces of different transparencies in the same file.
 The following code snippet produces two files which contain the vertex info
 (surfaces.obj) and color/transparency info (surfaces.mtl) for a 3D
 galaxy simulation:
 
-.. code-block:: python
-
+```Python
    from yt.mods import *
 
    pf = load("/data/workshop2012/IsolatedGalaxy/galaxy0030/galaxy0030")
@@ -45,9 +42,10 @@ galaxy simulation:
    for i,r in enumerate(rho):
        surf = pf.h.surface(sphere, 'Density', r)
        surf.export_obj(filename, transparency = trans[i], color_field='Temperature', plot_index = i)
+```
 
 The calling sequence is fairly similar to the ``export_ply`` function
-`previously used <http://blog.yt-project.org/post/3DSurfacesAndSketchFab.html>`_
+[previously used](http://blog.yt-project.org/post/3DSurfacesAndSketchFab.html)
 to export 3D surfaces.  However, one can now specify a transparency for each
 surface of interest, and each surface is enumerated in the OBJ files with ``plot_index``.
 This means one could potentially add surfaces to a previously
@@ -58,8 +56,7 @@ One tricky thing: the header of the OBJ file points to the MTL file (with
 the header command ``mtllib``).  This means if you move one or both of the files
 you may have to change the header to reflect their new directory location.
 
-A Few More Options
-------------------
+### A Few More Options
 
 There are a few extra inputs for formatting the surface files you may want to use.
 
@@ -70,33 +67,25 @@ Default will scale the vertices by the physical bounds of your sphere.
 of all surfaces between this min and max.  Default is to scale the colors of each
 surface to their own min and max values.
 
-Uploading to SketchFab
-----------------------
+### Uploading to SketchFab
 
-To upload to `Sketchfab <http://sketchfab.com>`_ one only needs to zip the
+To upload to [Sketchfab](http://sketchfab.com) one only needs to zip the
 OBJ and MTL files together, and then upload via your dashboard prompts in
-the usual way.  For example, the above script produces:
+the usual way.  For example, the above script produces 
+[this beautiful
+rendering](https://skfb.ly/5k4j2fdcb?autostart=0&transparent=0&autospin=0&controls=1&watermark=1)
 
-.. raw:: html
-
-   <iframe frameborder="0" height="480" width="854" allowFullScreen
-   webkitallowfullscreen="true" mozallowfullscreen="true"
-   src="https://skfb.ly/5k4j2fdcb?autostart=0&transparent=0&autospin=0&controls=1&watermark=1">
-   </iframe>
-
-Importing to MeshLab and Blender
---------------------------------
+### Importing to MeshLab and Blender
 
 The new OBJ formatting will produce multi-colored surfaces in both
-`MeshLab <http://meshlab.sourceforge.net/>`_ and `Blender <http://www.blender.org/>`_,
+[MeshLab](http://meshlab.sourceforge.net/) and [Blender](http://www.blender.org/),
 a feature not possible with the
-`previous PLY exporter <http://blog.yt-project.org/post/3DSurfacesAndSketchFab.html>`_.
+[previous PLY exporter](http://blog.yt-project.org/post/3DSurfacesAndSketchFab.html).
 To see colors in MeshLab go to the "Render" tab and
 select "Color -> Per Face".  Note in both MeshLab and Blender, unlike Sketchfab, you can't see
 transparencies until you render.
 
-...One More Option
-------------------
+### ...One More Option
 
 If you've started poking around the actual code instead of skipping off to
 lose a few days running around your own simulations
@@ -104,8 +93,7 @@ you may have noticed there are a few more options then those listed above,
 specifically, a few related to something called "Emissivity."  This allows you
 to output one more type of variable on your surfaces.  For example:
 
-.. code-block:: python
-
+```Python
    from yt.mods import *
 
    pf = load("/data/workshop2012/IsolatedGalaxy/galaxy0030/galaxy0030")
@@ -123,6 +111,7 @@ to output one more type of variable on your surfaces.  For example:
        surf.export_obj(filename, transparency = trans[i],
                        color_field='Temperature', emit_field = 'Emissivity',
 		       plot_index = i)
+```
 
 will output the same OBJ and MTL as in our previous example, but it will scale
 an emissivity parameter by our new field.  Technically, this makes our outputs
@@ -136,10 +125,8 @@ scripts in Blender.  For example, on a Mac, you would modify the file
 "/Applications/Blender/blender.app/Contents/MacOS/2.65/scripts/addons/io_scene_obj/import_obj.py",
 in the function "create_materials" with:
 
-.. code-block:: python
 
-   # ...
-
+```Python 
                     elif line_lower.startswith(b'tr'):  # translucency
                         context_material.translucency = float_func(line_split[1])
                     elif line_lower.startswith(b'tf'):
@@ -149,15 +136,13 @@ in the function "create_materials" with:
                         context_material.emit = float_func(line_split[1]) # MODIFY: THIS LINE TOO
                     elif line_lower.startswith(b'illum'):
                         illum = int(line_split[1])
-
-   # ...
+```
 
 To use this in Blender, you might create a
-`Blender script <http://cgcookie.com/blender/2011/08/26/introduction-to-scripting-with-python-in-blender/>`_
+[Blender script](http://cgcookie.com/blender/2011/08/26/introduction-to-scripting-with-python-in-blender/)
 like the following:
 
-.. code-block:: python
-
+```Python 
    import bpy
    from math import *
 
@@ -179,10 +164,11 @@ like the following:
    # render
    scene.render.filepath ='/Users/jillnaiman/surfaces_blender' # needs full path
    bpy.ops.render.render(write_still=True)
+```
 
 This above bit of code would produce an image like so:
 
-.. attachment-image:: surfaces_blender.png
+{{< figure src="/img/objexporter/surfaces_blender.png" title="Our cool image" >}}
 
 Note that the hottest stuff is brightly shining, while the cool stuff is less so
 (making the inner isodensity contour barely visible from the outside of the surfaces).
