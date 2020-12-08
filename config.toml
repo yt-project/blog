@@ -8,3 +8,18 @@ canonifyURLs = true
 [params]
   avatar = "img/yt_logo.svg"
   author = "the yt project"
+  
+  # social media
+  email = "yt-users@python.org"
+  twitter = "yt_astro"
+  github = "yt-project"
+  
+  # search
+  enableSearch = true
+
+  # options
+  showSummaryCoverInPost = true
+  # hasTwitterEmbed = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
