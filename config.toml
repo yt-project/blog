@@ -18,8 +18,7 @@ canonifyURLs = true
   enableSearch = true
 
   # options
-  showSummaryCoverInPost = true
-  # hasTwitterEmbed = true
+  hasTwitterEmbed = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
