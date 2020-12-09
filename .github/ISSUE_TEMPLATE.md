@@ -44,14 +44,15 @@ might be helpful for you to write your post is included below
 ### Possible tags
 
 Tags related specifically to yt functionality 
-* **Sliceplot**
-* **Profileeplot**
-* **Phaseplot**
+* **SlicePlot**
+* **ProfileePlot**
+* **PhasePlot**
 * **Particles**
 * **AMR**
 * **Unstructured Mesh**
 * **Surfaces**
 * **Volume Rendering**
+* **Annotations**
 
 Tags related specifically to development/community
 * **Release**

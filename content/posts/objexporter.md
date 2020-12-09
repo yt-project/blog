@@ -9,7 +9,6 @@ categories:
 tags:
   - new feature
   - surfaces
-  - tutorial 
 ---
 
 How to export surfaces into an obj file (will it blend?!) 

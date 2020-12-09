@@ -7,6 +7,8 @@ authorlink: https://matthewturk.github.io/
 cover: /img/random/shoes.jpeg
 categories:
   - development
+tags:
+  - community
 ---
 
 Our reasoning for switching licenses for the yt-project

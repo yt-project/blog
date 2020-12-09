@@ -8,7 +8,7 @@ cover: /img/sketchfab/sketchfab.png
 categories:
   - tutorial
 tags:
-  - features
+  - new feature
   - surfaces
 ---
 
