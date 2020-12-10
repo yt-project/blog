@@ -1,6 +1,7 @@
 ---
 title: Simple Grid Refinement
-date: 2012-10-30:T22:16:54-06:00
+date: 2012-10-30T22:16:54-06:00
+lastmod: 2012-10-30T22:16:54-06:00
 author: Matthew Turk
 cover: /img/Simple_Grid_Refinement_files/Simple_Grid_Refinement_fig_00.png
 categories:
@@ -8,8 +9,6 @@ categories:
 tags:
   - New Features
 ---
-
-# Simple Grid Refinement.ipynb
 
 [Notebook Download](https://hub.yt-project.org/go/65ik8c)
 
