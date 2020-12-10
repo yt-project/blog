@@ -29,22 +29,22 @@ particle mass.
 
 Here is a brief list of the main improvements:
 
-> -   Improved the Cython Rockstar wrapper to allow multiple reader
->     tasks. For large datasets on parallel disk systems using multiple
->     reader tasks can significantly speed up the overall analysis.
-> -   It is now possible to load Rockstar halos off disk (for post
->     analysis) that behave like all the other halo objects available in
->     yt (HOP, FOF). It is possible to access the halo particle data,
->     and the particle data is only loaded on demand.
-> -   Additionally, Rockstar halos have attached to them supplementary
->     information pulled directly from the Rockstar output. In
->     particular, if there is merger tree information, it is stored
->     there.
-> -   Rockstar should now build automatically with the rest of yt when
->     the `install_script.sh` is used.
-> -   Rockstar can work \"inline\" with Enzo, meaning that it can locate
->     halos from a running Enzo cosmology simulation without first
->     staging the data to disk.
+ -   Improved the Cython Rockstar wrapper to allow multiple reader
+     tasks. For large datasets on parallel disk systems using multiple
+     reader tasks can significantly speed up the overall analysis.
+ -   It is now possible to load Rockstar halos off disk (for post
+     analysis) that behave like all the other halo objects available in
+     yt (HOP, FOF). It is possible to access the halo particle data,
+     and the particle data is only loaded on demand.
+ -   Additionally, Rockstar halos have attached to them supplementary
+     information pulled directly from the Rockstar output. In
+     particular, if there is merger tree information, it is stored
+     there.
+ -   Rockstar should now build automatically with the rest of yt when
+     the `install_script.sh` is used.
+ -   Rockstar can work \"inline\" with Enzo, meaning that it can locate
+     halos from a running Enzo cosmology simulation without first
+     staging the data to disk.
 
 The full documentation on how to run Rockstar is available [in the yt
 documentation](http://yt-project.org/doc/analysis_modules/running_halofinder.html#rockstar-halo-finding).
