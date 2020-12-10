@@ -19,7 +19,6 @@ while read line; do
             # 
             # download the images to the post folder
             pfolder="./static/img/${1}/"
-            echo "$pfolder"
             wget -P "$pfolder" -q "$url"
             #
             # this is the name of the downloaded file

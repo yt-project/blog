@@ -18,11 +18,8 @@ jobs:
         run: |
           script_loc="$PWD/create_post.sh"
           post_save="./content/posts/${POST_TITLE}.md"
-          echo "$post_save"
           img_save_dir="./static/img/$POST_TITLE"
-          echo "$img_save_dir"
           mkdir "$img_save_dir"
-          echo -e "$POST_BODY"
           # echo -e "$POST_BODY" | sh "$script_loc" "${POST_TITLE}" > "${post_save}" 
           "$script_loc" "${POST_TITLE}" > "${post_save}" << EOF
           $POST_BODY
