@@ -1,4 +1,7 @@
----
+<!--
+--- 
+-->
+
 title: The title of your blog post
 date: 2020-12-09T15:57:41-06:00
 lastmod: 2020-12-09T15:57:41-06:00
@@ -10,7 +13,12 @@ categories:
 tags:
   - tag1
   - tag2
----
+
+<!--
+--- get rid of these comment lines and make sure this header is bracketed with
+three dashes
+-->
+
 
 Here you should summarize your post. This particular line will be previewed in
 the tiling theme on the blog. You can write your entire post in markdown.  
