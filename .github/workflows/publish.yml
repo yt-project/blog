@@ -1,0 +1,38 @@
+name: publish post from issue
+
+on:
+  issues:
+    types: ['labeled']
+
+jobs:
+  build:
+    if: ${{ github.event.label.name == 'publish' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Generate Post
+        env:
+          POST_TITLE: ${{ github.event.issue.title }}
+          POST_BODY: ${{ github.event.issue.body }}
+        run: |
+          preprocess_bin="$PWD/create_post.sh"
+          post_save="content/posts/${POST_TITLE}.md"
+          img_save_dir="static/img/$POST_TITLE"
+          mkdir "$img_save_dir"
+          $create_post.sh ${POST_TITLE} > ${post_save} << EOF
+          $POST_BODY
+          EOF
+          
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          delete-branch: true
+          title: "publish: ${{ github.event.issue.title }}"
+          body: |
+            This is an automatically generated post from Issue ${{ github.event.issue.number }}
+
+            Merging will publish to: https://munkm.github.io/yt-blog/posts//${{ github.event.issue.title }}
+            Closes #${{ github.event.issue.number }}
+          reviewers: "${{ github.repository_owner }}, ${{ github.event.issue.user }}"
+          commit-message: "post: ${{ github.event.issue.title }}"
