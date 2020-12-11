@@ -1,9 +1,14 @@
-# yt Testing and Parallelism
-
+---
+title: yt Testing and Parallelism
 author: Sam Skillman
-
 date: 2011-10-24T07:14:22-00:00
-
+lastmod: 2011-10-24T07:14:22-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 A few of us worked this past week on a couple yt projects and made what
 we think is significant progress. Two of the items we focused on were
 testing and parallelism.

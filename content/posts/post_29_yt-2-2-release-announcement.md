@@ -1,9 +1,14 @@
-# yt-2.2 Release Announcement
-
+---
+title: yt-2.2 Release Announcement
 author: Cameron Hummels
-
 date: 2011-09-02T06:56:00-00:00
-
+lastmod: 2011-09-02T06:56:00-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 (Please feel encouraged to forward this message to any other interested
 parties.)
 

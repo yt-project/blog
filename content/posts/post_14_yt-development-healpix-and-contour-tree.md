@@ -1,9 +1,14 @@
-# yt development: HEALpix and Contour Tree
-
+---
+title: yt development: HEALpix and Contour Tree
 author: Matthew Turk
-
 date: 2011-02-21T04:14:53-00:00
-
+lastmod: 2011-02-21T04:14:53-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 This week there was not very much yt development. However, a few notes
 may be of interest. SamS has updated the HEALPix camera to support
 ordered projections; what this means is that you can now make volume

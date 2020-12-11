@@ -1,9 +1,14 @@
-# Introducing the yt Hub
-
+---
+title: Introducing the yt Hub
 author: Britton Smith
-
 date: 2011-08-24T13:28:30-00:00
-
+lastmod: 2011-08-24T13:28:30-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 I am very excited to announce the yt Hub: <http://hub.yt-project.org/>.
 
 The yt Hub is a gathering place for all things related to running,

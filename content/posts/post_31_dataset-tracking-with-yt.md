@@ -1,9 +1,14 @@
-# Dataset Tracking with yt
-
+---
+title: Dataset Tracking with yt
 author: Stephen Skory
-
 date: 2011-09-12T10:53:00-00:00
-
+lastmod: 2011-09-12T10:53:00-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 In this post I'd like to discuss a bit of work in progress to highlight
 some exciting new features that we hope to have working in yt sometime
 soon.

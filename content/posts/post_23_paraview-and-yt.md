@@ -1,9 +1,14 @@
-# ParaView and yt
-
+---
+title: ParaView and yt
 author: Matthew Turk
-
 date: 2011-06-13T20:09:34-00:00
-
+lastmod: 2011-06-13T20:09:34-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 Thanks to some awesome work by developers at Kitware, yt can now be
 called from within ParaView!
 

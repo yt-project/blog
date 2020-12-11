@@ -1,9 +1,14 @@
-# yt development: Documentation
-
+---
+title: yt development: Documentation
 author: Matthew Turk
-
 date: 2011-02-07T05:29:00-00:00
-
+lastmod: 2011-02-07T05:29:00-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 As a result of progress in my scientific goals, and the application of
 recent yt developments to them, I did not make many changes or
 developments in yt this week. When I did work on yt, I primarily spent

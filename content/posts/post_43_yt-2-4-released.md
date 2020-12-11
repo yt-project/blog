@@ -1,9 +1,14 @@
-# yt 2.4 released!
-
+---
+title: yt 2.4 released!
 author: Matthew Turk
-
 date: 2012-08-03T02:43:40-00:00
-
+lastmod: 2012-08-03T02:43:40-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 We’re proud to announce the release of version 2.4 of the yt Project,
 <http://yt-project.org/> . The new version includes many new features,
 refinements of existing features and numerous bugfixes. We encourage all

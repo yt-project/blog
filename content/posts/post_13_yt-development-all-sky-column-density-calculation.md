@@ -1,9 +1,14 @@
-# yt development: All-sky column density calculation
-
+---
+title: yt development: All-sky column density calculation
 author: Matthew Turk
-
 date: 2011-02-14T06:13:00-00:00
-
+lastmod: 2011-02-14T06:13:00-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 This week I added the ability to calculate all-sky column densities.
 This functionality uses [HEALpix](http://healpix.jpl.nasa.gov/) to
 calculate equally-area regions on the sky and then shoots out rays from

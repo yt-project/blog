@@ -1,9 +1,14 @@
-# Example HEALpix Contour Rendering Movie
-
+---
+title: Example HEALpix Contour Rendering Movie
 author: Sam Skillman
-
 date: 2011-02-21T06:21:01-00:00
-
+lastmod: 2011-02-21T06:21:01-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 In response to Matt's [post
 &lt;http://blog.enzotools.org/yt-development-healpix-
 and-contour-tree&gt;]() on the HEALpix rendering update, I thought it

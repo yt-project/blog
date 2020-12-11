@@ -1,9 +1,14 @@
-# Figuring Out Stereo Volume Rendering
-
+---
+title: Figuring Out Stereo Volume Rendering
 author: Matthew Turk
-
 date: 2010-05-22T09:13:00-00:00
-
+lastmod: 2010-05-22T09:13:00-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 Last week I was approached by a friend and collaborator to prepare some
 large volume renderings using the software volume renderer in yt. In the
 past we've successfully made very, very large image renderings using yt

@@ -1,9 +1,14 @@
-# yt has moved to mercurial!
-
+---
+title: yt has moved to mercurial!
 author: Matthew Turk
-
 date: 2010-09-09T06:58:23-00:00
-
+lastmod: 2010-09-09T06:58:23-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 For about a year and a half now, most of the unstable development of yt
 has occurred inside a [mercurial](http://mercurial.selenic.com/) repo.
 Mercurial is a distributed version control system, not unlike git or

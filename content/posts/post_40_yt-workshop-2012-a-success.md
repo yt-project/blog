@@ -1,9 +1,14 @@
-# yt workshop 2012: a success!
-
+---
+title: yt workshop 2012: a success!
 author: Matthew Turk
-
 date: 2012-01-30T09:02:09-00:00
-
+lastmod: 2012-01-30T09:02:09-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 The yt workshop last week in Chicago (
 <http://yt-project.org/workshop2012/> ) was an enormous success. On
 behalf of the organizing and technical committees, I'd like to

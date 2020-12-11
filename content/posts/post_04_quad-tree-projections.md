@@ -1,9 +1,14 @@
-# Quad Tree Projections
-
+---
+title: Quad Tree Projections
 author: Matthew Turk
-
 date: 2010-09-10T21:41:23-00:00
-
+lastmod: 2010-09-10T21:41:23-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 The current method for projections in yt is based on a home-grown
 algorithm for calculating grid overlap and joining points. I've always
 been pretty proud of it -- it gave good results, and it succeeded at the

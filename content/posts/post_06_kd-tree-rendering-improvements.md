@@ -1,9 +1,14 @@
-# kD-Tree Rendering Improvements
-
+---
+title: kD-Tree Rendering Improvements
 author: Sam Skillman
-
 date: 2010-09-27T11:46:00-00:00
-
+lastmod: 2010-09-27T11:46:00-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 Hi all,
 
 Just sharing a video here that showcases some improvements I've made to

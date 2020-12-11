@@ -1,9 +1,14 @@
-# Boolean Data Containers
-
+---
+title: Boolean Data Containers
 author: Stephen Skory
-
 date: 2011-11-09T07:03:00-00:00
-
+lastmod: 2011-11-09T07:03:00-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 A useful new addition to yt are *boolean* data containers. These are
 hybrid data containers that are built by relating already-defined data
 containers with each other using boolean operators. Nested boolean

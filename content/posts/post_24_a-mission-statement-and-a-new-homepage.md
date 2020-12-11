@@ -1,9 +1,14 @@
-# A mission statement and a new homepage!
-
+---
+title: A mission statement and a new homepage!
 author: Matthew Turk
-
 date: 2011-06-29T18:28:05-00:00
-
+lastmod: 2011-06-29T18:28:05-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 In case you haven't visited our front page lately, the yt homepage has
 been [redesigned](http://yt.enzotools.org/)! The old homepage was nice
 and functional, but it tried to cram too much into too small a place.

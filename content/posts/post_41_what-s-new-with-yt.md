@@ -1,9 +1,14 @@
-# What's new with yt?
-
+---
+title: What's new with yt?
 author: Matthew Turk
-
 date: 2012-02-13T03:10:21-00:00
-
+lastmod: 2012-02-13T03:10:21-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 Now that the post-workshop preparations and work have settled down, I
 thought it might be interesting to share some of the developments going
 on with yt. We're still a long way from a new release, so these interim

@@ -1,9 +1,14 @@
-# Improvements to Parallelism
-
+---
+title: Improvements to Parallelism
 author: Matthew Turk
-
 date: 2010-09-26T21:06:56-00:00
-
+lastmod: 2010-09-26T21:06:56-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 The last few days I've spent some time looking at how parallelism in yt
 performs. I conducted two different tests, both of which operated on the
 512^3, 7 level 'Santa Fe Light Cone' dataset RD0036. This dataset has

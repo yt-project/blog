@@ -1,9 +1,14 @@
-# yt Google+ Hangout tomorrow!
-
+---
+title: yt Google+ Hangout tomorrow!
 author: Matthew Turk
-
 date: 2012-04-30T04:42:04-00:00
-
+lastmod: 2012-04-30T04:42:04-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 Tomorrow we're going to try something new -- Google Hangouts! If you'd
 like help with something, to share some feedback, or just to say hi to
 other community members, stop by Tuesday, May 1st. We'll be starting up

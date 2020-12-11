@@ -1,9 +1,14 @@
-# A movie of yt in paraview
-
+---
+title: A movie of yt in paraview
 author: Matthew Turk
-
 date: 2011-08-08T20:49:46-00:00
-
+lastmod: 2011-08-08T20:49:46-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 Jorge posted this video of using yt inside ParaView. It demonstrated
 multi-res slices, projections, and even volume rendering with an
 adjustable transfer function. I think it's pretty incredible. Thanks

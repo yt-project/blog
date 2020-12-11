@@ -1,9 +1,14 @@
-# yt development: star particle rendering, simple merger trees and documentation
-
+---
+title: yt development: star particle rendering, simple merger trees and documentation
 author: Matthew Turk
-
 date: 2011-01-17T05:27:00-00:00
-
+lastmod: 2011-01-17T05:27:00-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 This is the first of a new series of "what's up with yt" blog posts I'm
 going to be writing. By keeping this log, I hope that maybe some things
 that would otherwise get lost in the version control changesets will get

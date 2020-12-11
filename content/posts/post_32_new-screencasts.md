@@ -1,9 +1,14 @@
-# New Screencasts
-
+---
+title: New Screencasts
 author: Matthew Turk
-
 date: 2011-09-27T12:20:56-00:00
-
+lastmod: 2011-09-27T12:20:56-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 A few of the yt developers have been experimenting with screencasts to
 show off new features or demonstrate how to do some things. Sam and I
 have both prepared screencasts on volume rendering and getting started

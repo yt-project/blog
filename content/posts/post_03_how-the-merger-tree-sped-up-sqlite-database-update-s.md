@@ -1,9 +1,14 @@
-# How the Merger Tree Sped Up SQLite Database UPDATEs
-
+---
+title: How the Merger Tree Sped Up SQLite Database UPDATEs
 author: Stephen Skory
-
 date: 2010-09-09T13:26:00-00:00
-
+lastmod: 2010-09-09T13:26:00-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 The [Parallel Merger
 Tree](http://yt.enzotools.org/doc/extensions/merger_tree.html) in yt,
 like most of the code in yt, has a rich history of changes and upgrades.

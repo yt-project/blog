@@ -1,9 +1,14 @@
-# yt development: Time series, and more
-
+---
+title: yt development: Time series, and more
 author: Matthew Turk
-
 date: 2011-01-31T04:53:10-00:00
-
+lastmod: 2011-01-31T04:53:10-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 Not much yt development went on in the last week; I spent some time
 working with Enzo and driving forward simulation goals, which resulted
 in some development that directly benefited those simulation goals.

@@ -1,9 +1,14 @@
-# yt Development: Quad trees, Tickets and more
-
+---
+title: yt Development: Quad trees, Tickets and more
 author: Matthew Turk
-
 date: 2011-06-02T20:20:00-00:00
-
+lastmod: 2011-06-02T20:20:00-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 It's been a while since the last Development post &mdash; but in that
 time, some pretty fun things have been going on. These are some of the
 smaller things, but there are bigger things in store which I'll write

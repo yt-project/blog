@@ -1,9 +1,14 @@
-# Google+ Page for yt
-
+---
+title: Google+ Page for yt
 author: Matthew Turk
-
 date: 2011-11-09T03:23:00-00:00
-
+lastmod: 2011-11-09T03:23:00-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 yt now has a [Google Plus
 page](https://plus.google.com/1969-12-31T18:00:00-00:0071834552760/).
 Here's we'll post smaller, less blog-worthy items, hold video

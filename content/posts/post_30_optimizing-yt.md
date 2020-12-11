@@ -1,9 +1,14 @@
-# Optimizing yt
-
+---
+title: Optimizing yt
 author: Matthew Turk
-
 date: 2011-09-10T08:39:52-00:00
-
+lastmod: 2011-09-10T08:39:52-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 This last week, following the release of version 2.2 of yt, I spent a
 bit of time looking at speed improvements. There were several places
 that the code was unacceptably slow:

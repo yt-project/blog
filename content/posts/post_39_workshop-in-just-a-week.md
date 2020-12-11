@@ -1,9 +1,14 @@
-# Workshop in just a week!
-
+---
+title: Workshop in just a week!
 author: Matthew Turk
-
 date: 2012-01-16T18:45:43-00:00
-
+lastmod: 2012-01-16T18:45:43-00:00
+cover: /img/random/shoes.jpeg
+categories:
+  - archive
+tags:
+  - archive
+---
 The first yt workshop is in just about a week. We've updated the
 [website](http%20://yt-project.org/workshop2012) with the current list
 of talks, along with information about getting to and from the workshop
