@@ -1,5 +1,5 @@
 ---
-title: yt Development: Quad trees, Tickets and more
+title: yt development - Quad trees, Tickets and more
 author: Matthew Turk
 date: 2011-06-02T20:20:00-00:00
 lastmod: 2011-06-02T20:20:00-00:00

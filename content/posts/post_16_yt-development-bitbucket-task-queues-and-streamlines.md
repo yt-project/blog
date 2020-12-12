@@ -1,5 +1,5 @@
 ---
-title: yt development: BitBucket, Task Queues, and Streamlines
+title: yt development - BitBucket, Task Queues, and Streamlines
 author: Matthew Turk
 date: 2011-02-28T05:35:00-00:00
 lastmod: 2011-02-28T05:35:00-00:00

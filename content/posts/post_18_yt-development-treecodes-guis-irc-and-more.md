@@ -1,5 +1,5 @@
 ---
-title: yt Development: Treecodes, GUIs, IRC and more!
+title: yt development - Treecodes, GUIs, IRC and more!
 author: Matthew Turk
 date: 2011-04-04T06:40:54-00:00
 lastmod: 2011-04-04T06:40:54-00:00

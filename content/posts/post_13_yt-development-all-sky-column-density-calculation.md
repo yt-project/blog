@@ -1,5 +1,5 @@
 ---
-title: yt development: All-sky column density calculation
+title: yt development - All-sky column density calculation
 author: Matthew Turk
 date: 2011-02-14T06:13:00-00:00
 lastmod: 2011-02-14T06:13:00-00:00

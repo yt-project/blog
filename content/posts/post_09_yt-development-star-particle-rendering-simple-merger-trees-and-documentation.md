@@ -1,5 +1,5 @@
 ---
-title: yt development\: star particle rendering, simple merger trees and documentation
+title: yt development - star particle rendering, simple merger trees and documentation
 author: Matthew Turk
 date: 2011-01-17T05:27:00-00:00
 lastmod: 2011-01-17T05:27:00-00:00

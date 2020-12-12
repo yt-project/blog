@@ -1,5 +1,5 @@
 ---
-title: yt development: External Analysis and Simulation Code Support
+title: yt development - External Analysis and Simulation Code Support
 author: Matthew Turk
 date: 2011-03-07T06:17:09-00:00
 lastmod: 2011-03-07T06:17:09-00:00

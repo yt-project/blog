@@ -1,5 +1,5 @@
 ---
-title: yt development: Documentation
+title: yt development - Documentation
 author: Matthew Turk
 date: 2011-02-07T05:29:00-00:00
 lastmod: 2011-02-07T05:29:00-00:00

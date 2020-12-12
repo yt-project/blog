@@ -1,5 +1,5 @@
 ---
-title: yt development: 2.0, Cython, and physics module wrapping
+title: yt development - 2.0, Cython, and physics module wrapping
 author: Matthew Turk
 date: 2011-01-24T07:10:50-00:00
 lastmod: 2011-01-24T07:10:50-00:00

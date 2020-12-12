@@ -1,5 +1,5 @@
 ---
-title: yt development: HEALpix and Contour Tree
+title: yt development - HEALpix and Contour Tree
 author: Matthew Turk
 date: 2011-02-21T04:14:53-00:00
 lastmod: 2011-02-21T04:14:53-00:00

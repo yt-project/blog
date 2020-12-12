@@ -1,5 +1,5 @@
 ---
-title: yt development: Time series, and more
+title: yt development - Time series, and more
 author: Matthew Turk
 date: 2011-01-31T04:53:10-00:00
 lastmod: 2011-01-31T04:53:10-00:00

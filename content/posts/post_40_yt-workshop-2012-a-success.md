@@ -1,5 +1,5 @@
 ---
-title: yt workshop 2012: a success!
+title: yt workshop 2012 - a success!
 author: Matthew Turk
 date: 2012-01-30T09:02:09-00:00
 lastmod: 2012-01-30T09:02:09-00:00
