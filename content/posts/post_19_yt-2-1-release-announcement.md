@@ -3,11 +3,15 @@ title: yt 2.1 Release Announcement
 author: Sam Skillman
 date: 2011-04-08T04:57:00-00:00
 lastmod: 2011-04-08T04:57:00-00:00
-cover: /img/random/shoes.jpeg
+cover: /img/yt_logo.svg
 categories:
   - archive
+  - development
 tags:
   - archive
+  - yt 2.x
+  - releases
+  - new features
 ---
 We are proud to announce the release of yt version 2.1. This release
 includes several new features, bug fixes, and numerous improvements to

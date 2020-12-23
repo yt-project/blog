@@ -3,11 +3,16 @@ title: yt development - BitBucket, Task Queues, and Streamlines
 author: Matthew Turk
 date: 2011-02-28T05:35:00-00:00
 lastmod: 2011-02-28T05:35:00-00:00
-cover: /img/random/shoes.jpeg
+authorlink: https://matthewturk.github.io/
+cover: /img/yt_logo.svg
 categories:
   - archive
+  - development
 tags:
   - archive
+  - community
+  - streamlines
+  - yt core
 ---
 The major changes this week came mostly in the form of administrative
 shifts. However, SamS did some great work I'm going to hint at (he'll

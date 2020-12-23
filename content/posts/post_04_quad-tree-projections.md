@@ -3,11 +3,13 @@ title: Quad Tree Projections
 author: Matthew Turk
 date: 2010-09-10T21:41:23-00:00
 lastmod: 2010-09-10T21:41:23-00:00
-cover: /img/random/shoes.jpeg
+authorlink: https://matthewturk.github.io/
+cover: /img/yt_logo.svg
 categories:
   - archive
 tags:
   - archive
+  - yt-core
 ---
 The current method for projections in yt is based on a home-grown
 algorithm for calculating grid overlap and joining points. I've always

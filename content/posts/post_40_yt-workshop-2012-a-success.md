@@ -3,11 +3,14 @@ title: yt workshop 2012 - a success!
 author: Matthew Turk
 date: 2012-01-30T09:02:09-00:00
 lastmod: 2012-01-30T09:02:09-00:00
-cover: /img/random/shoes.jpeg
+authorlink: https://matthewturk.github.io/
+cover: /img/random/lego-bike.jpg
 categories:
   - archive
+  - meta
 tags:
   - archive
+  - community
 ---
 The yt workshop last week in Chicago (
 <http://yt-project.org/workshop2012/> ) was an enormous success. On

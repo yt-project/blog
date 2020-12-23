@@ -3,11 +3,13 @@ title: yt Google+ Hangout tomorrow!
 author: Matthew Turk
 date: 2012-04-30T04:42:04-00:00
 lastmod: 2012-04-30T04:42:04-00:00
-cover: /img/random/shoes.jpeg
+authorlink: https://matthewturk.github.io/
+cover: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Google%2B_logo.svg/250px-Google%2B_logo.svg.png
 categories:
   - archive
 tags:
   - archive
+  - community
 ---
 Tomorrow we're going to try something new -- Google Hangouts! If you'd
 like help with something, to share some feedback, or just to say hi to

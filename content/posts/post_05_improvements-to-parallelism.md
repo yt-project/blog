@@ -3,7 +3,8 @@ title: Improvements to Parallelism
 author: Matthew Turk
 date: 2010-09-26T21:06:56-00:00
 lastmod: 2010-09-26T21:06:56-00:00
-cover: /img/random/shoes.jpeg
+authorlink: https://matthewturk.github.io/
+cover: /img/output.png
 categories:
   - archive
 tags:

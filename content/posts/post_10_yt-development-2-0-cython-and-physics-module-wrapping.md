@@ -3,11 +3,15 @@ title: yt development - 2.0, Cython, and physics module wrapping
 author: Matthew Turk
 date: 2011-01-24T07:10:50-00:00
 lastmod: 2011-01-24T07:10:50-00:00
-cover: /img/random/shoes.jpeg
+authorlink: https://matthewturk.github.io/
+cover: /img/yt_logo.svg
 categories:
   - archive
+  - development
 tags:
   - archive
+  - yt 2.x
+  - yt core
 ---
 This is the second blog entry in the weekly series, with some updates on
 what took place last week with respect to yt development. One of the

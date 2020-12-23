@@ -3,11 +3,13 @@ title: Boolean Data Containers
 author: Stephen Skory
 date: 2011-11-09T07:03:00-00:00
 lastmod: 2011-11-09T07:03:00-00:00
-cover: /img/random/shoes.jpeg
+cover: /img/random/lego-happy.jpg
 categories:
   - archive
+  - tutorial
 tags:
   - archive
+  - new features
 ---
 A useful new addition to yt are *boolean* data containers. These are
 hybrid data containers that are built by relating already-defined data
@@ -32,11 +34,9 @@ bool = pf.h.boolean([sp1, "OR", sp2])
 
 Here is a short video showing the result:
 
-<div class="vimeo">
 
-31859862
+{{< vimeo 31859862 >}}
 
-</div>
 
 ## The "AND" Operator
 
@@ -53,11 +53,9 @@ bool = pf.h.boolean([re1, "AND", sp1])
 
 Here is a short video showing the result:
 
-<div class="vimeo">
 
-31861314
+{{< vimeo 31861314 >}}
 
-</div>
 
 ## The "NOT" Operator
 
@@ -78,11 +76,7 @@ bool = pf.h.boolean([re1, "NOT", re2])
 
 Here is a short video showing the result:
 
-<div class="vimeo">
-
-31859691
-
-</div>
+{{< vimeo 31859691 >}}
 
 ## Nested Logic
 
@@ -103,11 +97,7 @@ sp2 = pf.h.sphere([0.1]*3, .25)
 bool = pf.h.boolean([re1, "NOT", "(", re2, "AND", sp1, ")", "NOT", sp2])
 ```
 
-<div class="vimeo">
-
-31863019
-
-</div>
+{{< vimeo 31863019 >}}
 
 For those wondering how the movies were made, I've posted [the script
 here](http://paste.enzotools.org/show/1939/) . Note that blocks of

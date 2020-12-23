@@ -3,11 +3,13 @@ title: Gmaps-ify your data!
 author: Matthew Turk
 date: 2011-06-09T21:08:48-00:00
 lastmod: 2011-06-09T21:08:48-00:00
-cover: /img/random/shoes.jpeg
+authorlink: https://matthewturk.github.io/
+cover: /img/yt_mapserver.png
 categories:
   - archive
 tags:
   - archive
+  - fun
 ---
 A couple of us have been working on a comprehensive notebook web GUI for
 yt. It's not ready yet.

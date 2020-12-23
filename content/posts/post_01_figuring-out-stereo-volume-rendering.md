@@ -1,5 +1,16 @@
-# Figuring Out Stereo Volume Rendering
-
+---
+title: Figuring Out Stereo Volume Rendering
+author: Matthew Turk
+date: 2010-05-22T09:13:00-00:00
+lastmod: 2010-05-22T09:13:00-00:00
+authorlink: https://matthewturk.github.io/
+cover: /img/r_0001.png
+categories:
+  - archive
+tags:
+  - archive
+  - Volume Rendering
+---
 Last week I was approached by a friend and collaborator to prepare some
 large volume renderings using the software volume renderer in yt. In the
 past we've successfully made very, very large image renderings using yt
@@ -56,11 +67,7 @@ course, on Bourke's page he has a workaround that may work for this, but
 I have not yet attempted it.) Here's a rough depiction of the different
 between the two methods.
 
-<div class="attachment-image">
-
-RenderingMechanisminyt.png
-
-</div>
+![image](/img/RenderingMechanisminyt.png)
 
 The upshot is that stereo doesn't seem to work unless you go with the
 "toe-in" method that can cause eyestrain after a long time and shows
@@ -86,11 +93,7 @@ come.)
 
 So now we have a camera, and it makes images like this:
 
-<div class="attachment-image">
-
-c\_0001.png
-
-</div>
+![image](/img/c_0001.png)
 
 It's a little dim, but that's a task for another day. The next step is
 taking that perspective and turning it into a set of stereo images. To
@@ -123,14 +126,6 @@ easy task: the aforementioned Paul Bourke website on stereo pairs, the
 PyOpenGL and PIL teams for making the image pair viewer easy, and
 everyone else whose work I've built on to make things like this.
 
-<div class="attachment-image">
+![image](/img/l_0001.png)
 
-l\_0001.png
-
-</div>
-
-<div class="attachment-image">
-
-r\_0001.png
-
-</div>
+![image](/img/r_0001.png)

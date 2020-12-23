@@ -3,11 +3,13 @@ title: Workshop in just a week!
 author: Matthew Turk
 date: 2012-01-16T18:45:43-00:00
 lastmod: 2012-01-16T18:45:43-00:00
-cover: /img/random/shoes.jpeg
+authorlink: https://matthewturk.github.io/
+cover: /img/yt_logo.svg
 categories:
   - archive
 tags:
   - archive
+  - community
 ---
 The first yt workshop is in just about a week. We've updated the
 [website](http%20://yt-project.org/workshop2012) with the current list

@@ -3,11 +3,14 @@ title: Announcing the 2012 yt Workshop
 author: Matthew Turk
 date: 2011-10-03T17:24:29-00:00
 lastmod: 2011-10-03T17:24:29-00:00
-cover: /img/random/shoes.jpeg
+authorlink: https://matthewturk.github.io/
+cover: /img/random/lego-bike.jpg
 categories:
   - archive
+  - meta
 tags:
   - archive
+  - community
 ---
 I'm pleased to announce the 2012 yt Workshop at the FLASH Center in
 Chicago, January 24-26.

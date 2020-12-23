@@ -4,8 +4,13 @@ date: 2015-08-20T14:14:29-05:00
 lastmod: 2020-06-04T14:14:29-05:00
 author: Suoqing Ji
 cover: /img/line-integral/lic_velocity.png
-categories: ["tutorial"]
-tags: ["annotations", "SlicePlot"]
+categories:
+  - archive
+  - tutorial
+tags:
+  - archive
+  - annotations
+  - SlicePlot
 # showcase: true
 ---
 

@@ -3,12 +3,20 @@ title: Our New Blog
 date: 2012-11-04T22:09:04-06:00
 lastmod: 2012-11-04T22:09:04-06:00
 author: Matthew Turk
-cover: /img/Simple_Grid_Refinement_files/Simple_Grid_Refinement_fig_00.png
+authorlink: https://matthewturk.github.io/
+cover: /img/yt_logo.svg
 categories:
   - meta
+  - archive
 tags:
   - blog
+  - archive
 ---
+
+We've got a new blog! Here's a post that talks about the changes we've made and
+how we expect to move forward! 
+
+<!--more-->
 
 # Our New Blog
 

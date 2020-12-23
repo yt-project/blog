@@ -5,9 +5,11 @@ lastmod: 2012-11-26T20:22:16-06:00
 author: Stephen Skory
 cover: /img/ROCK_halo0006_0.png
 categories:
+  - archive
   - tutorial
 tags:
-  - New Features
+  - archive
+  - new features
 ---
 
 Over the last few weeks, Matt Turk, Christopher Moody, and Stephen Skory

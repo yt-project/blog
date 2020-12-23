@@ -3,11 +3,14 @@ title: Simple Grid Refinement
 date: 2012-10-30T22:16:54-06:00
 lastmod: 2012-10-30T22:16:54-06:00
 author: Matthew Turk
+authorlink: https://matthewturk.github.io/
 cover: /img/Simple_Grid_Refinement_files/Simple_Grid_Refinement_fig_00.png
 categories:
+  - archive
   - tutorial
 tags:
-  - New Features
+  - archive
+  - new features
 ---
 
 [Notebook Download](https://hub.yt-project.org/go/65ik8c)

@@ -3,11 +3,15 @@ title: yt Version 2.3 Announcement
 author: Stephen Skory
 date: 2011-12-15T10:44:00-00:00
 lastmod: 2011-12-15T10:44:00-00:00
-cover: /img/random/shoes.jpeg
+cover: /img/random/lego-happy.jpg
 categories:
   - archive
+  - development
 tags:
   - archive
+  - yt 2.x
+  - releases
+  - new features
 ---
 Just in time for the New Year, we’re happy to announce the release of yt
 version 2.3! ( <http://yt-project.org/> ) The new version includes many

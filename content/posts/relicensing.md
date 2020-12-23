@@ -6,8 +6,10 @@ author: Matthew Turk
 authorlink: https://matthewturk.github.io/
 cover: /img/random/shoes.jpeg
 categories:
+  - archive
   - development
 tags:
+  - archive
   - community
 ---
 

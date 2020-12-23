@@ -3,11 +3,13 @@ title: Introducing the yt Hub
 author: Britton Smith
 date: 2011-08-24T13:28:30-00:00
 lastmod: 2011-08-24T13:28:30-00:00
-cover: /img/random/shoes.jpeg
+authorlink: https://sites.google.com/view/brittonsmith/
+cover: /img/random/lego-fix.jpg
 categories:
   - archive
 tags:
   - archive
+  - data
 ---
 I am very excited to announce the yt Hub: <http://hub.yt-project.org/>.
 

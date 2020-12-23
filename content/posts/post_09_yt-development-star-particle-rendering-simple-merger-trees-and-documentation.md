@@ -3,11 +3,16 @@ title: yt development - star particle rendering, simple merger trees and documen
 author: Matthew Turk
 date: 2011-01-17T05:27:00-00:00
 lastmod: 2011-01-17T05:27:00-00:00
-cover: /img/random/shoes.jpeg
+authorlink: https://matthewturk.github.io/
+cover: /img/stars_orig.png
 categories:
   - archive
+  - development
 tags:
   - archive
+  - community
+  - yt core
+  - frontends Maestro
 ---
 This is the first of a new series of "what's up with yt" blog posts I'm
 going to be writing. By keeping this log, I hope that maybe some things

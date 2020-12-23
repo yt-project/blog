@@ -3,11 +3,13 @@ title: yt Logo Contest, and possibly a free mug!
 author: Sam Skillman
 date: 2011-04-26T17:46:57-00:00
 lastmod: 2011-04-26T17:46:57-00:00
-cover: /img/random/shoes.jpeg
+cover: /img/yt_logo.svg
 categories:
   - archive
 tags:
   - archive
+  - community
+  - fun
 ---
 yt is in need of an awesome new logo, which is why we are announcing the
 first ever new logo contest! So here's the deal:

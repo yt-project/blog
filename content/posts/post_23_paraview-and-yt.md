@@ -3,11 +3,14 @@ title: ParaView and yt
 author: Matthew Turk
 date: 2011-06-13T20:09:34-00:00
 lastmod: 2011-06-13T20:09:34-00:00
-cover: /img/random/shoes.jpeg
+authorlink: https://matthewturk.github.io/
+cover: https://www.kitware.com/main/wp-content/uploads/2017/02/Kitware_Print_186.svg
 categories:
   - archive
+  - development
 tags:
   - archive
+  - new features
 ---
 Thanks to some awesome work by developers at Kitware, yt can now be
 called from within ParaView!
@@ -59,7 +62,7 @@ code types, this will be a valuable tool for constructing datasets from
 scratch.
 
 For more information, see [this
-pose](http://public.kitware.com/pipermail/amr/2011-June/000027.html) on
+post](http://public.kitware.com/pipermail/amr/2011-June/000027.html) on
 the AMR mailing list at Kitware, which contains an example script. While
 this functionality will be in the 2.2 release, it will be highlighted in
 the 2.3 release as we streamline and work out bugs in a proper ParaView

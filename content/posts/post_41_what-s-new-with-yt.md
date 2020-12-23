@@ -3,11 +3,14 @@ title: What's new with yt?
 author: Matthew Turk
 date: 2012-02-13T03:10:21-00:00
 lastmod: 2012-02-13T03:10:21-00:00
-cover: /img/random/shoes.jpeg
+authorlink: https://matthewturk.github.io/
+cover: /img/random/lego-fix.jpg
 categories:
   - archive
+  - development
 tags:
   - archive
+  - community
 ---
 Now that the post-workshop preparations and work have settled down, I
 thought it might be interesting to share some of the developments going

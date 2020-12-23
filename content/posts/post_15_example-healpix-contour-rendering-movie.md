@@ -3,11 +3,12 @@ title: Example HEALpix Contour Rendering Movie
 author: Sam Skillman
 date: 2011-02-21T06:21:01-00:00
 lastmod: 2011-02-21T06:21:01-00:00
-cover: /img/random/shoes.jpeg
+cover: /img/all_sky.png
 categories:
   - archive
 tags:
   - archive
+  - volume rendering
 ---
 In response to Matt's [post
 &lt;http://blog.enzotools.org/yt-development-healpix-
@@ -20,4 +21,5 @@ the start it looks like a disc because the entire simulation is in front
 of the camera and by the end it is all around the sides, indicating the
 simulation is behind the camera. Enjoy!
 
-`all_sky.mov|Download movie`
+[Download all sky movie](/img/all_sky.mov)
+

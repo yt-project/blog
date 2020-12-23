@@ -3,12 +3,18 @@ title: Volume Rendering with a kD-Tree Decomposition
 author: Sam Skillman
 date: 2010-05-06T06:53:35-00:00
 lastmod: 2010-05-06T06:53:35-00:00
-cover: /img/random/shoes.jpeg
+cover: /img/high_res_halo.png
 categories:
   - archive
 tags:
   - archive
+  - yt-core
 ---
+
+Let's talk about the progress we've made on a kD-Tree decomposition.
+
+<!--more-->
+
 Hi all,
 
 Matt just set up this blog to document some of the developments that are

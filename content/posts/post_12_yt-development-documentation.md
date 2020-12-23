@@ -3,11 +3,15 @@ title: yt development - Documentation
 author: Matthew Turk
 date: 2011-02-07T05:29:00-00:00
 lastmod: 2011-02-07T05:29:00-00:00
-cover: /img/random/shoes.jpeg
+authorlink: https://matthewturk.github.io/
+cover: /img/yt_logo.svg
 categories:
   - archive
+  - development
 tags:
   - archive
+  - documentation
+  - community
 ---
 As a result of progress in my scientific goals, and the application of
 recent yt developments to them, I did not make many changes or

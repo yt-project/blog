@@ -3,11 +3,14 @@ title: We're now the yt Project!
 author: Matthew Turk
 date: 2011-08-22T08:39:56-00:00
 lastmod: 2011-08-22T08:39:56-00:00
-cover: /img/random/shoes.jpeg
+authorlink: https://matthewturk.github.io/
+cover: /img/yt_logo.svg
 categories:
   - archive
+  - meta
 tags:
   - archive
+  - community
 ---
 This is just a brief blog entry -- other news is on the way soon! -- to
 let everyone know we've updated our domains. In keeping with the change

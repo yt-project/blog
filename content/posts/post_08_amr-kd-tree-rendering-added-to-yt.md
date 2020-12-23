@@ -3,11 +3,12 @@ title: AMR kd-Tree rendering added to yt
 author: Sam Skillman
 date: 2010-11-09T15:32:03-00:00
 lastmod: 2010-11-09T15:32:03-00:00
-cover: /img/random/shoes.jpeg
+cover: /img/Screen_shot_2010-11-09_at_4.49.png
 categories:
   - archive
 tags:
   - archive
+  - yt core
 ---
 After a significant amount of development and restructuring, I have
 added the AMR kd-Tree rendering framework to yt. There are several posts

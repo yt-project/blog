@@ -3,11 +3,13 @@ title: Dataset Tracking with yt
 author: Stephen Skory
 date: 2011-09-12T10:53:00-00:00
 lastmod: 2011-09-12T10:53:00-00:00
-cover: /img/random/shoes.jpeg
+cover: /img/random/lego-bike.jpg
 categories:
   - archive
+  - development
 tags:
   - archive
+  - new features
 ---
 In this post I'd like to discuss a bit of work in progress to highlight
 some exciting new features that we hope to have working in yt sometime
@@ -58,8 +60,6 @@ particular, the numerical columns can now be sorted correctly.
 
 I'm excited about the prospects for a simple system like this!
 
-<div class="vimeo">
 
-28797703
+{{< vimeo 28797703 >}}
 
-</div>

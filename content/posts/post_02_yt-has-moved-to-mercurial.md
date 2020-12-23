@@ -3,11 +3,13 @@ title: yt has moved to mercurial!
 author: Matthew Turk
 date: 2010-09-09T06:58:23-00:00
 lastmod: 2010-09-09T06:58:23-00:00
-cover: /img/random/shoes.jpeg
+authorlink: https://matthewturk.github.io/
+cover: /img/yt_logo.svg
 categories:
   - archive
 tags:
   - archive
+  - community
 ---
 For about a year and a half now, most of the unstable development of yt
 has occurred inside a [mercurial](http://mercurial.selenic.com/) repo.

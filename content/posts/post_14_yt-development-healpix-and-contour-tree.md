@@ -3,11 +3,14 @@ title: yt development - HEALpix and Contour Tree
 author: Matthew Turk
 date: 2011-02-21T04:14:53-00:00
 lastmod: 2011-02-21T04:14:53-00:00
-cover: /img/random/shoes.jpeg
+authorlink: https://matthewturk.github.io/
+cover: /img/yt_logo.svg
 categories:
   - archive
+  - development
 tags:
   - archive
+  - volume rendering
 ---
 This week there was not very much yt development. However, a few notes
 may be of interest. SamS has updated the HEALPix camera to support

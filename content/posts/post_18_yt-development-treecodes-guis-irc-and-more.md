@@ -3,11 +3,15 @@ title: yt development - Treecodes, GUIs, IRC and more!
 author: Matthew Turk
 date: 2011-04-04T06:40:54-00:00
 lastmod: 2011-04-04T06:40:54-00:00
-cover: /img/random/shoes.jpeg
+cover: /img/random/trees.jpg
 categories:
   - archive
+  - development
 tags:
   - archive
+  - yt 2.x
+  - community
+  - streamlines
 ---
 It's been nearly a month since the last yt development post; in that
 time, there's been quite a bit of development in a couple different

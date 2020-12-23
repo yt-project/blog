@@ -3,11 +3,14 @@ title: A mission statement and a new homepage!
 author: Matthew Turk
 date: 2011-06-29T18:28:05-00:00
 lastmod: 2011-06-29T18:28:05-00:00
-cover: /img/random/shoes.jpeg
+authorlink: https://matthewturk.github.io/
+cover: /img/random/lego-fix.jpg
 categories:
   - archive
+  - meta
 tags:
   - archive
+  - community
 ---
 In case you haven't visited our front page lately, the yt homepage has
 been [redesigned](http://yt.enzotools.org/)! The old homepage was nice

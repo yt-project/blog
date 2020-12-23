@@ -3,11 +3,14 @@ title: yt-2.2 Release Announcement
 author: Cameron Hummels
 date: 2011-09-02T06:56:00-00:00
 lastmod: 2011-09-02T06:56:00-00:00
-cover: /img/random/shoes.jpeg
+authorlink: http://chummels.org/
+cover: /img/random/lego-happy.jpg
 categories:
   - archive
 tags:
   - archive
+  - releases
+  - yt 2.x
 ---
 (Please feel encouraged to forward this message to any other interested
 parties.)

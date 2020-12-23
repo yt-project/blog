@@ -3,11 +3,12 @@ title: kD-Tree Rendering Improvements
 author: Sam Skillman
 date: 2010-09-27T11:46:00-00:00
 lastmod: 2010-09-27T11:46:00-00:00
-cover: /img/random/shoes.jpeg
+cover: /img/3d_kd_breadth_decomp.png
 categories:
   - archive
 tags:
   - archive
+  - yt-core
 ---
 Hi all,
 

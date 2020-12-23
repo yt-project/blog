@@ -3,11 +3,13 @@ title: Enzo 2.0 and Inline yt
 author: Matthew Turk
 date: 2010-09-30T20:05:36-00:00
 lastmod: 2010-09-30T20:05:36-00:00
-cover: /img/random/shoes.jpeg
+authorlink: https://matthewturk.github.io/
+cover: /img/yt_logo.svg
 categories:
   - archive
 tags:
   - archive
+  - frontends Enzo
 ---
 Enzo 2.0 has just been released to its new [Google Code
 website](http://enzo.googlecode.com/). This release features preliminary

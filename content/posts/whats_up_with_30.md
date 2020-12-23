@@ -3,11 +3,14 @@ title: What's up with yt 3.0?
 date: 2012-11-15T21:05:33-06:00
 lastmod: 2012-11-15T21:05:33-06:00
 author: Matthew Turk
-cover: /img/cover.jpg
+authorlink: https://matthewturk.github.io/
+cover: /img/cylindrical_pixelizer.png
 categories:
+  - archive
   - development
 tags:
-  - yt30
+  - archive
+  - yt-3.x
 ---
 
 This is a long blog post! The short of it is:

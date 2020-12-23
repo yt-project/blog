@@ -3,11 +3,14 @@ title: yt development - External Analysis and Simulation Code Support
 author: Matthew Turk
 date: 2011-03-07T06:17:09-00:00
 lastmod: 2011-03-07T06:17:09-00:00
+authorlink: https://matthewturk.github.io/
 cover: /img/random/shoes.jpeg
 categories:
   - archive
+  - development
 tags:
   - archive
+  - community
 ---
 This last week was the first full week on
 [BitBucket](http://hg.enzotools.org/) and so far I think it has been

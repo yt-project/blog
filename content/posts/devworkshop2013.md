@@ -6,8 +6,10 @@ author: Matthew Turk
 authorlink: https://matthewturk.github.io/
 cover: /img/devworkshop2013/devworkshop.jpg
 categories:
+  - archive
   - development
 tags:
+  - archive
   - community
 ---
 

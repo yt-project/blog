@@ -5,9 +5,11 @@ lastmod: 2020-12-03T16:56:06-06:00
 author: Jill Naiman
 cover: /img/objexporter/surfaces_blender.png
 categories:
+  - archive
   - tutorial
 tags:
-  - new feature
+  - archive
+  - new features
   - surfaces
 ---
 

@@ -3,11 +3,14 @@ title: This blog has moved -- but you don't have to!
 author: Matthew Turk
 date: 2011-08-31T02:58:50-00:00
 lastmod: 2011-08-31T02:58:50-00:00
-cover: /img/random/shoes.jpeg
+authorlink: https://matthewturk.github.io/
+cover: /img/yt_logo.svg
 categories:
   - archive
 tags:
   - archive
+  - blog
+  - community
 ---
 In keeping with the [project
 rename](http://blog.yt-project.org/were-now-the-yt-%20project) we've

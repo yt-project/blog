@@ -3,11 +3,13 @@ title: How the Merger Tree Sped Up SQLite Database UPDATEs
 author: Stephen Skory
 date: 2010-09-09T13:26:00-00:00
 lastmod: 2010-09-09T13:26:00-00:00
-cover: /img/random/shoes.jpeg
+cover: /img/random/trees.jpg
 categories:
   - archive
 tags:
   - archive
+  - halos
+  - yt-core
 ---
 The [Parallel Merger
 Tree](http://yt.enzotools.org/doc/extensions/merger_tree.html) in yt,
