@@ -6,8 +6,10 @@ author: Nathan Goldbaum
 authorlink: https://ngoldbaum.github.io/
 cover: /img/random/lego-fix.jpg
 categories:
+  - archive
   - development
 tags:
+  - archive
   - community
 ---
 

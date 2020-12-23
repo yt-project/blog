@@ -6,8 +6,10 @@ author: John ZuHone
 authorlink: https://hea-www.harvard.edu/~jzuhone/
 cover: /img/ParticleGenerator_files/ParticleGenerator_ipynb_fig_03.png
 categories:
+  - archive
   - tutorial
 tags:
+  - archive
   - particles
   - annotations
 ---

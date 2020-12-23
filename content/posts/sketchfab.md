@@ -6,9 +6,11 @@ author: Matthew Turk
 authorlink: https://matthewturk.github.io/
 cover: /img/sketchfab/sketchfab.png
 categories:
+  - archive
   - tutorial
 tags:
-  - new feature
+  - archive
+  - new features
   - surfaces
 ---
 
