@@ -2,7 +2,7 @@
 title: "A yt-napari party"
 date: 2021-01-12T18:22:25-06:00
 author: Chris Havlin
-cover: /img/ytnapari_enzo3d.png
+cover: /img/ytnapari/ytnapari_enzo3d.png
 categories:
   - Tutorial
 tags:
@@ -11,7 +11,9 @@ tags:
 
 Interactive visualization of *yt* data using *napari*? 
 
-A while back I was playing around with using *napari* to visualize data loaded from *yt* and I thought that it's about time to brush off that work and share it! The basic goal was to use *yt* to load a dataset and then generate a series of fixed resolution buffers that get passed off to *napari* for interactive visualization. It's a fun and simple way of adding some more interactive analysis to your *yt* workflow and might serve as a basis for writing a *napari* plugin that uses *yt* as a backend for IO and analysis! 
+<!--more-->
+
+A while back I was playing around with using *napari* to visualize data loaded from *yt* and with the launch of the awesome new *yt* blog, I thought that it's about time to brush off that work and share it! The basic goal was to use *yt* to load a dataset and then generate a series of fixed resolution buffers that get passed off to *napari* for interactive visualization. It's a fun and simple way of adding some more interactive analysis to your *yt* workflow and might serve as a basis for writing a *napari* plugin that uses *yt* as a backend for IO and analysis! 
 
 To whet your appetite, here's a screen capture of interactive visualization of the Enzo64 sample dataset:
 
