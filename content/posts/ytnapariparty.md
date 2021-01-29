@@ -6,7 +6,7 @@ cover: /img/ytnapari/ytnapari_enzo3d.png
 categories:
   - Tutorial
 tags:
-  - Community
+  - Experimental
 ---
 
 Interactive visualization of *yt* data using *napari*? 
