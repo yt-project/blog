@@ -1,7 +1,6 @@
 ---
 title: "Dask and yt: a pre-YTEP"
 date: 2021-01-27T10:15:14-06:00
-draft: false
 author: Chris Havlin
 cover: /img/yt_logo.svg
 categories:
