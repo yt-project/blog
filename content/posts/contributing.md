@@ -252,7 +252,7 @@ Once you feel your post is ready, commit your changes and push them up to your
 user repository. 
 
 ``` bash
-$ git push origin master
+$ git push origin main
 ```
 
 We encourage you to commit and push frequently!
