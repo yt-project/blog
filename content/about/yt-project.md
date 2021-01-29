@@ -7,6 +7,9 @@ lastmod: 2020-12-07T23:07:32-06:00
 {{< figure src="/img/yt_logo.svg" alt="the yt-project logo"
 link="https://yt-project.org/" >}}
 
+Want to contribute a post? Check out our [contributor
+guide](https://yt-project.github.io/yt-blog/posts/contributing/)
+
 Check out our documentation [here](https://yt-project.org/docs/dev/)
 
 The yt-project [homepage](https://yt-project.org/)
