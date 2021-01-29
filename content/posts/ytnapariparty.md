@@ -53,7 +53,7 @@ with napari.gui_qt():
 
 Or if in an IPython session (or Jupyter notebook), use the `%gui qt` magic command:
 
-```
+```python
 %gui qt
 import napari
 viewer = napari.Viewer()
