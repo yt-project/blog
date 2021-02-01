@@ -6,7 +6,7 @@ hacks, and fun things people do with yt!
 
 Check out our contributing guide here:
 
-https://yt-project.github.io//yt-blog/posts/contributing/
+https://yt-project.github.io/blog/posts/contributing/
 
 We welcome contributions from **all** members of the yt community, and we hope
 to see you around! 
