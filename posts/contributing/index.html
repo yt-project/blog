@@ -1,30 +1,150 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="ie=edge"><title>yt 2.1 Release Announcement | yt project blog</title><meta name=author content="Sam Skillman"><meta name=description content="We are proud to announce the release of yt version 2.1. This release includes several new features, bug fixes, and numerous improvements to the code base and documentation. At the yt homepage, http://yt.enzotools.org/ , an installation script, a cookbook, documentation and a guide to getting involved can be found.
-yt is an analysis and visualization toolkit for Adaptive Mesh Refinement data. yt provides full support for Enzo, Orion, and FLASH codes, with preliminary support for RAMSES, ART, Chombo, CASTRO and MAESTRO codes."><meta name=generator content="Hugo 0.71.1"><link rel=canonical href=https://munkm.github.io/yt-blog/posts/post_19_yt-2-1-release-announcement/><meta property="og:title" content="yt 2.1 Release Announcement"><meta property="og:description" content="We are proud to announce the release of yt version 2.1. This release includes several new features, bug fixes, and numerous improvements to the code base and documentation. At the yt homepage, http://yt.enzotools.org/ , an installation script, a cookbook, documentation and a guide to getting involved can be found.
-yt is an analysis and visualization toolkit for Adaptive Mesh Refinement data. yt provides full support for Enzo, Orion, and FLASH codes, with preliminary support for RAMSES, ART, Chombo, CASTRO and MAESTRO codes."><meta property="og:type" content="article"><meta property="og:url" content="https://munkm.github.io/yt-blog/posts/post_19_yt-2-1-release-announcement/"><meta property="article:published_time" content="2011-04-08T04:57:00+00:00"><meta property="article:modified_time" content="2011-04-08T04:57:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="yt 2.1 Release Announcement"><meta name=twitter:description content="We are proud to announce the release of yt version 2.1. This release includes several new features, bug fixes, and numerous improvements to the code base and documentation. At the yt homepage, http://yt.enzotools.org/ , an installation script, a cookbook, documentation and a guide to getting involved can be found.
-yt is an analysis and visualization toolkit for Adaptive Mesh Refinement data. yt provides full support for Enzo, Orion, and FLASH codes, with preliminary support for RAMSES, ART, Chombo, CASTRO and MAESTRO codes."><link rel=stylesheet href=https://munkm.github.io/yt-blog/css/semantic.min.css><link rel=stylesheet href=https://munkm.github.io/yt-blog/css/icomoon.css><link rel=stylesheet href=https://munkm.github.io/yt-blog/css/OverlayScrollbars.min.css><link rel=stylesheet href=https://munkm.github.io/yt-blog/css/github-markdown.css><link rel=stylesheet href=https://munkm.github.io/yt-blog/css/site.css><style>a:hover{text-decoration:underline}</style></head><body class=default><nav class="ui secondary menu dream-menu"><div class=item><i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i></div><div class=item><i class="large link home icon" title=Home onclick="window.location.href='https:\/\/munkm.github.io\/yt-blog\/'"></i></div><div class=item><i class="large link icon theme-switch" onclick=themeSwitch()></i></div><div class=item><i class="large link search icon" onclick=toggleSearch()></i></div></nav><div class=flip-container><div class=flipper><section class=front><div class=dream-max-width><div class="ui centered relaxed grid dream-grid"><div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id=dream-save-post-as-img><section class="ui top attached segment"><header><h1 class="ui large header">yt 2.1 Release Announcement<div class="sub header">@
-Sam Skillman
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="ie=edge"><title>Contributing to the yt Blog! | yt project blog</title><meta name=author content="the yt project"><meta name=description content="Do you have:
+ A new feature that you think is interesting? A way that you use yt that you think others would like? A tutorial on how to replicate your analysis? A neat application for yt?  Consider contributing to the blog! Here&amp;rsquo;s how to do it!"><meta name=generator content="Hugo 0.71.1"><link rel=canonical href=https://munkm.github.io/yt-blog/posts/contributing/><meta property="og:title" content="Contributing to the yt Blog!"><meta property="og:description" content="Do you have:
+
+A new feature that you think is interesting?
+A way that you use yt that you think others would like?
+A tutorial on how to replicate your analysis?
+A neat application for yt?
+
+Consider contributing to the blog! Here&rsquo;s how to do it!"><meta property="og:type" content="article"><meta property="og:url" content="https://munkm.github.io/yt-blog/posts/contributing/"><meta property="article:published_time" content="2021-01-28T15:57:31-06:00"><meta property="article:modified_time" content="2021-01-28T15:57:31-06:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Contributing to the yt Blog!"><meta name=twitter:description content="Do you have:
+
+A new feature that you think is interesting?
+A way that you use yt that you think others would like?
+A tutorial on how to replicate your analysis?
+A neat application for yt?
+
+Consider contributing to the blog! Here&rsquo;s how to do it!"><link rel=stylesheet href=https://munkm.github.io/yt-blog/css/semantic.min.css><link rel=stylesheet href=https://munkm.github.io/yt-blog/css/icomoon.css><link rel=stylesheet href=https://munkm.github.io/yt-blog/css/OverlayScrollbars.min.css><link rel=stylesheet href=https://munkm.github.io/yt-blog/css/github-markdown.css><link rel=stylesheet href=https://munkm.github.io/yt-blog/css/site.css><style>a:hover{text-decoration:underline}</style></head><body class=default><nav class="ui secondary menu dream-menu"><div class=item><i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i></div><div class=item><i class="large link home icon" title=Home onclick="window.location.href='https:\/\/munkm.github.io\/yt-blog\/'"></i></div><div class=item><i class="large link icon theme-switch" onclick=themeSwitch()></i></div><div class=item><i class="large link search icon" onclick=toggleSearch()></i></div></nav><div class=flip-container><div class=flipper><section class=front><div class=dream-max-width><div class="ui centered relaxed grid dream-grid"><div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id=dream-save-post-as-img><section class="ui top attached segment"><header><h1 class="ui large header">Contributing to the yt Blog!<div class="sub header">@
+the yt project
 |
-Friday, Apr 8, 2011
-| 1 minute read
+Thursday, Jan 28, 2021
+| 8 minute read
 | Update at
-Friday, Apr 8, 2011</div></h1></header><article class=main><p>We are proud to announce the release of yt version 2.1. This release
-includes several new features, bug fixes, and numerous improvements to
-the code base and documentation. At the yt homepage,
-<a href=http://yt.enzotools.org/>http://yt.enzotools.org/</a> , an installation script, a cookbook,
-documentation and a guide to getting involved can be found.</p><p>yt is an analysis and visualization toolkit for Adaptive Mesh Refinement
-data. yt provides full support for Enzo, Orion, and FLASH codes, with
-preliminary support for RAMSES, ART, Chombo, CASTRO and MAESTRO codes.
-It can be used to create many common types of data products such as:</p><blockquote><ul><li>Slices</li><li>Projections</li><li>Profiles</li><li>Arbitrary Data Selection</li><li>Cosmological Analysis</li><li>Halo finding</li><li>Parallel AMR Volume Rendering</li><li>Gravitationally Bound Objects Analysis</li></ul></blockquote><p>There are a few major additions since yt-2.0 (Released January 17,
-2011), including:</p><blockquote><ul><li>Streamlines for visualization and querying</li><li>A treecode implementation to calculate binding energy</li><li>Healpix / all-sky parallel volume rendering</li><li>A development bootstrap script, for getting going with modifying
-and contributing</li><li>CASTRO particles</li><li>Time series analysis</li></ul></blockquote><p>Documentation: <a href=http://yt.enzotools.org/doc/>http://yt.enzotools.org/doc/</a></p><p>Installation:
-<a href=http://yt.enzotools.org/doc/advanced/installing.html#installing-yt>http://yt.enzotools.org/doc/advanced/installing.html#installing-yt</a></p><p>Cookbook: <a href=http://yt.enzotools.org/doc/cookbook/recipes.html>http://yt.enzotools.org/doc/cookbook/recipes.html</a></p><p>Get Involved:
-<a href=http://yt.enzotools.org/doc/advanced/developing.html#contributing-code>http://yt.enzotools.org/doc/advanced/developing.html#contributing-code</a></p><p>If you can&rsquo;t wait to get started, install with:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ wget http://hg.enzotools.org/yt/raw/stable/doc/install_script.sh
-$ bash install_script.sh
-</code></pre></div><p>Development has been sponsored by the NSF, DOE, and University funding.
-We invite you to get involved with developing and using yt!</p></article></section><footer class="ui attached segment dream-tags" data-html2canvas-ignore><a class="ui label" href=https://munkm.github.io/yt-blog/tags/archive title=archive>archive</a>
-<a class="ui label" href=https://munkm.github.io/yt-blog/tags/yt-2.x title="yt 2.x">yt 2.x</a>
-<a class="ui label" href=https://munkm.github.io/yt-blog/tags/releases title=releases>releases</a>
-<a class="ui label" href=https://munkm.github.io/yt-blog/tags/new-features title="new features">new features</a><div class="ui label" style=float:right;cursor:pointer onclick=savePostAsImg()><i class="save icon"></i>Save as image</div></footer></div><aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside"><article class=dream-header><section class="ui top attached center aligned segment"><div class="ui small circular image"><img src=https://munkm.github.io/yt-blog/img/yt_logo.svg></div><div class="ui medium header">the yt project's blog<div class="sub header" style=margin-top:.5rem></div></div><div class="ui horizontal list"><a class=item href=https://munkm.github.io/yt-blog/posts><i class="archive icon" title=Archives></i></a><a class=item href=https://munkm.github.io/yt-blog/tags><i class="tags icon" title="All Tags"></i></a><a class=item href=https://munkm.github.io/yt-blog/categories><i class="th list icon" title="All Categories"></i></a></div></section><section class="ui attached center aligned segment dream-tags"><a class="ui label" href=https://munkm.github.io/yt-blog/tags/annotations/ title=Annotations>Annotations</a>
+Thursday, Jan 28, 2021</div></h1></header><article class=main><p>Do you have:</p><ul><li>A new feature that you think is interesting?</li><li>A way that you use yt that you think others would like?</li><li>A tutorial on how to replicate your analysis?</li><li>A neat application for yt?</li></ul><p>Consider contributing to the blog! Here&rsquo;s how to do it!</p><p>The yt blog is build with the <a href>hugo</a> framework. We are hoping that this will
+make the blog more accessible to contributions from all kinds of users &ndash;
+including YOU! If you need any help or clarification on the directions here,
+please feel free to ask questions in the yt project slack, or you can open an
+issue on the yt blog <a href=https://github.com/yt-project/yt-blog>repository</a>. All
+questions about the blog are welcome; we want to know about your work!</p><p>We have two ways you can contribute a new post to the blog: either (1)
+creating an
+issue with your blog post content inside the issue itself, or (2) cloning the
+blog repository locally, committing your changes and submitting a pull request.
+Both have pros and cons and will be described below.</p><p><strong>note:</strong> We also welcome contributions to the blog to edit spelling or
+grammatical errors, fixing outdated links, submitting issues if you notice
+errors in the blog content, or any other types of blog enhancements. Your
+contributions are what make our community strong and vibrant.</p><h2 id=option-1-create-an-issue-with-your-blog-post-content>Option 1: Create an Issue with Your Blog Post Content</h2><p>Option 1 for building the blog is easier and doesn&rsquo;t require you to install
+anything new on your local machine, and it doesn&rsquo;t require you to use command
+line git.</p><p>If the above sounds attractive to you and you don&rsquo;t feel like
+building the blog locally, we have a script that will
+convert an issue on the yt blog to a blog post PR automatically. To do this
+follow these steps:</p><ol><li>Go to the <a href=https://github.com/munkm/yt-blog/issues>issues</a> page of the yt blog
+repository.</li><li>Click on <code>new issue</code> to open your blog post issue. The blog issue template
+is automatically formatted to with some header information for you to
+include so we attribute authorship.</li><li>Fill in the header information at the top of the page with your information
+and the date that you&rsquo;re writing the post. You can also add tags and
+categories for your post. We have the tags and categories that we&rsquo;re using
+on the blog currently listed as content in the issue body, so scroll
+down to check which ones apply to your post.</li><li>Start filling in content for the blog post in the issue body. Our issue
+template has a lot of helpful information to get you started, you can delete
+it when you&rsquo;re finished but we hope it helps!</li><li>Once your post is finished, click &ldquo;Submit new issue&rdquo;. One of the blog
+maintainers will come to double check it, and we will trigger the bot to
+start the post PR. Once the PR is created, it will tag your issue, so you
+should see a link pop up.
+The maintainer may ask you a few questions if there are
+formatting issues in the conversion, so be on the lookout!</li></ol><p>A few helpful tips:</p><ul><li>The blog posts are written in markdown, so you can use formatting in markdown
+to guide your post.</li><li>Make sure to delete the html comment lines (they look like this <code>&lt;!--</code> ) on
+your issue</li><li>When you drag and drop images on an issue, github will automatically upload
+them and create the correct markdown URL. For images you&rsquo;d like to include
+in your post, drag and drop them in the location of the &ldquo;issue&rdquo; that you
+want them to be placed. Our script will handle the
+conversion to local URLs for the blog.</li><li>hugo has something called shortcodes to help make embedding videos, twitter
+posts, gists, and other things a bit easier. Check out this page if you&rsquo;d like to
+use them in your post:
+<a href=https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes>https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes</a></li></ul><h2 id=option-2-issue-a-pull-request-with-your-blog-post-content>Option 2: Issue a Pull Request with your Blog Post Content</h2><p>If you&rsquo;re interested in playing around more with formatting, and some of the
+cool hugo features like
+<a href=https://gohugo.io/content-management/shortcodes/>shortcodes</a>, then this might
+be the option for you. This is the more &ldquo;traditional&rdquo; way of contributing to
+open source projects, so it might be the one you&rsquo;re more familiar with. Option
+2 does require a local setup, but it also allows you to preview your post in
+advance to catch any formatting errors.</p><p>Here are the steps to creating a blog post PR:</p><ul><li>Install hugo</li><li>Fork and Clone the repository</li><li>Build the project locally</li><li>Create a new post</li><li>Commit and push your changes</li><li>Create a Pull Request</li></ul><h3 id=install-hugo>Install Hugo</h3><p>You&rsquo;ll need a working copy of hugo on your machine to preview your post
+locally. To do that, follow the instructions on the <a href=https://gohugo.io/getting-started/installing/>hugo install
+page</a>.</p><h3 id=fork-and-clone-the-repository>Fork and Clone the Repository</h3><p>Go to the yt blog <a href=https://github.com/yt-project/yt-blog>repository</a> and click
+the fork button on the top right of the page. This will create a copy of the
+repository under your username, e.g. <a href=https://github.com/crashoverride/yt-blog>https://github.com/crashoverride/yt-blog</a> .</p><p>Next, clone the blog from your profile</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ git clone git@github.com:crashoverride/yt-blog.git
+</code></pre></div><pre><code>Cloning into 'yt-blog'...
+remote: Enumerating objects: 608, done.
+remote: Counting objects: 100% (608/608), done.
+remote: Compressing objects: 100% (163/163), done.
+remote: Total 1535 (delta 270), reused 541 (delta 263), pack-reused 927
+Receiving objects: 100% (1535/1535), 45.42 MiB | 4.10 MiB/s, done.
+Resolving deltas: 100% (676/676), done.
+</code></pre><p>This project uses a hugo theme called <code>dream</code>. For information about this theme
+specifically, check out the <a href="https://g1eny0ung.site/hugo-theme-dream/#/quick-start?id=add-quotabout-mequot">quickstart
+page</a>.
+Because we aren&rsquo;t doing any customization of the theme, we are using a
+reference to it as a submodule. This isn&rsquo;t cloned with a simple <code>git clone</code>, so
+we need to get that too. The following command will initialize the submodule
+and clone it in the correct location of this repository.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ git submodule update --init
+</code></pre></div><pre><code>Submodule 'themes/dream' (https://github.com/g1eny0ung/hugo-theme-dream.git)
+registered for path 'themes/dream'
+Cloning into '/Users/crashoverride/repos/yt-blog/themes/dream'...
+Submodule path 'themes/dream': checked out
+'eacbcc3f3625ce3bd770d55f130da915fa1f7ff0'
+</code></pre><p>Now we&rsquo;re ready to preview it locally!</p><h3 id=build-the-project-locally>Build the Project Locally</h3><p>Now that you have the project and submodule cloned, and hugo installed, you can
+preview the website locally. Execute:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ hugo server -D
+</code></pre></div><p>To create a local server of the page, served (by default) to localhost:1313</p><p>The <code>-D</code> flag will show draft posts (the <code>-D</code> flag is short for <code>--buildDrafts</code>,
+so as you start writing your post it will
+show up on this locally served version of the webpage. We will talk a bit more
+about drafts in the next step.</p><p>You should get the following output:</p><pre><code>
+                   | EN
+-------------------+------
+  Pages            | 124
+  Paginator pages  |   7
+  Non-page files   |   0
+  Static files     |  91
+  Processed images |   0
+  Aliases          |  27
+  Sitemaps         |   1
+  Cleaned          |   0
+
+Built in 281 ms
+Watching for changes in /Users/crashoverride/repos/yt-blog/{content,static,themes}
+Watching for config changes in /Users/crashoverride/yt-blog/config.toml
+Environment: &quot;development&quot;
+Serving pages from memory
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at http://localhost:1313/yt-blog/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+</code></pre><p>As you modify your post and save it, the site will be rebuilt automatically.
+Output in this process looks like the following:</p><pre><code>Change detected, rebuilding site.
+2021-01-28 16:08:05.778 -0600
+Source changed &quot;/Users/crashoverride/repos/yt-blog/content/posts/mycoolpost.md&quot;: WRITE
+Total in 32 ms
+</code></pre><h3 id=create-a-new-post>Create a New Post</h3><p>To create a new post with the header information that will be used to attribute
+your authorship and tag the post, execute:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ hugo new posts/mycoolpost.md
+</code></pre></div><p>from the base repository directory.</p><p>A new markdown file will be generated by hugo called <code>mycoolpost.md</code> in
+<code>content/posts/</code>. Open this file with your preferred editor and fill in the
+relevant header information, like your name, your website (only if you are
+comfortable), and appropriate tags for the post. You can see the tags that we
+use on the blog page at <a href=https://yt-project.github.io/yt-blog/>https://yt-project.github.io/yt-blog/</a> in the left
+panel.</p><p>If you look through the header of <code>mycoolpost.md</code>, you also see a <code>draft: true</code>
+line. This means your post is currently in draft mode. Because we called <code>hugo server -D</code> in the previous step, your post will show up in the live rendering
+of the blog. However, it will not show up on the final webpage or if you call
+<code>hugo server</code> without the drafts enabled. Before submitting your pull request,
+remove the <code>draft: true</code> line. `</p><p>Continue to fill in your content. We can&rsquo;t wait to see your contribution!!!</p><p><strong>Note:</strong>
+Images are stored in a separate location than the posts. Post files are in the
+<code>content/posts/</code> folder. However, images are stored in <code>static/img</code>. For any
+images that you&rsquo;d like to include in your post, create a folder in <code>static/img</code>
+that matches your post name, e.g. <code>static/img/mycoolpost</code> and add your images
+there. To reference your images in your post, you can use a reference to your
+folder like so:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown>![](/img/mycoolpost/phaseplota.png)
+</code></pre></div><h3 id=commit-and-push-your-changes>Commit and Push Your Changes</h3><p>As you are creating your post, you can commit several times or add everything
+at the end.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ git add content/posts/mycoolpost.md
+$ git commit -m <span style=color:#e6db74>&#34;add post about how useful PhasePlots are&#34;</span>
+</code></pre></div><p>Once you feel your post is ready, commit your changes and push them up to your
+user repository.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ git push origin main
+</code></pre></div><p>We encourage you to commit and push frequently!</p><h3 id=create-a-pull-request>Create a Pull Request</h3><p>Now that your changes are on your profile on github, you can <a href=https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request>create a pull
+request</a>
+to have them on the yt blog! We can&rsquo;t wait to see your contributions!</p></article></section><footer class="ui attached segment dream-tags" data-html2canvas-ignore><a class="ui label" href=https://munkm.github.io/yt-blog/tags/blog title=blog>blog</a><div class="ui label" style=float:right;cursor:pointer onclick=savePostAsImg()><i class="save icon"></i>Save as image</div></footer></div><aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside"><div class="ui segment toc"><nav id=TableOfContents><ul><li><a href=#option-1-create-an-issue-with-your-blog-post-content>Option 1: Create an Issue with Your Blog Post Content</a></li><li><a href=#option-2-issue-a-pull-request-with-your-blog-post-content>Option 2: Issue a Pull Request with your Blog Post Content</a><ul><li><a href=#install-hugo>Install Hugo</a></li><li><a href=#fork-and-clone-the-repository>Fork and Clone the Repository</a></li><li><a href=#build-the-project-locally>Build the Project Locally</a></li><li><a href=#create-a-new-post>Create a New Post</a></li><li><a href=#commit-and-push-your-changes>Commit and Push Your Changes</a></li><li><a href=#create-a-pull-request>Create a Pull Request</a></li></ul></li></ul></nav></div><article class=dream-header><section class="ui top attached center aligned segment"><div class="ui small circular image"><img src=https://munkm.github.io/yt-blog/img/yt_logo.svg></div><div class="ui medium header">the yt project's blog<div class="sub header" style=margin-top:.5rem></div></div><div class="ui horizontal list"><a class=item href=https://munkm.github.io/yt-blog/posts><i class="archive icon" title=Archives></i></a><a class=item href=https://munkm.github.io/yt-blog/tags><i class="tags icon" title="All Tags"></i></a><a class=item href=https://munkm.github.io/yt-blog/categories><i class="th list icon" title="All Categories"></i></a></div></section><section class="ui attached center aligned segment dream-tags"><a class="ui label" href=https://munkm.github.io/yt-blog/tags/annotations/ title=Annotations>Annotations</a>
 <a class="ui label" href=https://munkm.github.io/yt-blog/tags/archive/ title=Archive>Archive</a>
 <a class="ui label" href=https://munkm.github.io/yt-blog/tags/blog/ title=Blog>Blog</a>
 <a class="ui label" href=https://munkm.github.io/yt-blog/tags/community/ title=Community>Community</a>
