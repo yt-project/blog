@@ -48,7 +48,7 @@ If the above sounds attractive to you and you don't feel like
 building the blog locally, we have a script that will
 convert an issue on the yt blog to a blog post PR automatically. To do this
 follow these steps: 
-1. Go to the [issues](https://github.com/munkm/yt-blog/issues) page of the yt blog 
+1. Go to the [issues](https://github.com/yt-project/yt-blog/issues) page of the yt blog 
    repository. 
 1. Click on `new issue` to open your blog post issue. The blog issue template
    is automatically formatted to with some header information for you to
