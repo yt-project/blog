@@ -1,4 +1,4 @@
-baseurl = "https://yt-project.github.io/yt-blog/"
+baseurl = "https://yt-project.github.io/blog/"
 languageCode = "en-us"
 title = "yt project blog"
 theme = "dream"

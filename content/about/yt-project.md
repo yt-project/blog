@@ -8,7 +8,7 @@ lastmod: 2020-12-07T23:07:32-06:00
 link="https://yt-project.org/" >}}
 
 Want to contribute a post? Check out our [contributor
-guide](https://yt-project.github.io/yt-blog/posts/contributing/)
+guide](https://yt-project.github.io/blog/posts/contributing/)
 
 Check out our documentation [here](https://yt-project.org/docs/dev/)
 
