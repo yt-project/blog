@@ -1,4 +1,4 @@
-baseurl = "https://munkm.github.io/yt-blog/"
+baseurl = "https://yt-project.github.io/yt-blog/"
 languageCode = "en-us"
 title = "yt project blog"
 theme = "dream"

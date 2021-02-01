@@ -33,7 +33,7 @@ jobs:
           body: |
             This is an automatically generated post from Issue ${{ github.event.issue.number }}
 
-            Merging will publish to: https://munkm.github.io/yt-blog/posts//${{ github.event.issue.title }}
+            Merging will publish to: https://yt-project.github.io/yt-blog/posts//${{ github.event.issue.title }}
             Closes #${{ github.event.issue.number }}
           reviewers: "${{ github.repository_owner }}"
           commit-message: "post: ${{ github.event.issue.title }}"
