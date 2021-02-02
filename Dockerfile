@@ -1,10 +1,6 @@
 FROM cibuilds/hugo:0.80 AS builder
 
-COPY content content
-COPY static static
-COPY themes themes
-COPY resources resources
-COPY config.toml .
+COPY ./ .
 
 RUN hugo --minify
 
