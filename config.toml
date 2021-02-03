@@ -4,6 +4,7 @@ title = "yt project blog"
 theme = "dream"
 canonifyURLs = true
 paginate = 25
+googleAnalytics = "UA-391373-7"
 
 
 [params]
