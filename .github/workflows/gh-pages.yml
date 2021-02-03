@@ -17,7 +17,7 @@ jobs:
           hugo-version: '0.71.1'
           extended: true
       - name: Build
-        run: hugo --minify
+        run: hugo --baseURL "https://yt-project.github.io/blog/" --minify
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
