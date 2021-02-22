@@ -1,8 +1,9 @@
 --- 
 title: PhasePlots are the Best Plots
-date: 2020-12-09T15:57:41-06:00
-lastmod: 2020-12-09T15:57:41-06:00
+date: 2021-02-21T15:57:41-06:00
+lastmod: 2021-02-21T15:57:41-06:00
 author: Stephanie Tonnesen
+cover: /img/PhasePlots_BestPlots/108384924-2b1b8d80-71d9-11eb-84eb-14522c944253.png 
 categories:
 - User Story
 tags:
@@ -35,11 +36,4 @@ Ah-ha! The well-mixed gas with negative velocities is all at small radius--in fa
 I hope you enjoyed seeing this fun example of the power of PhasePlots, and so I leave you with this:
 
 ![image](/img/PhasePlots_BestPlots/108384924-2b1b8d80-71d9-11eb-84eb-14522c944253.png)
-
-
-
-
-
-
-
 
