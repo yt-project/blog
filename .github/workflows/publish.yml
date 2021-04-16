@@ -31,7 +31,7 @@ jobs:
           delete-branch: true
           title: "publish: ${{ github.event.issue.title }}"
           body: |
-            This is an automatically generated post from Issue ${{ github.event.issue.number }}
+            This is an automatically generated post from Issue #${{ github.event.issue.number }} originally authored by @${{ github.event.issue.user.login }}.
 
             Merging will publish to: https://yt-project.github.io/blog/posts//${{ github.event.issue.title }}
             Closes #${{ github.event.issue.number }}
