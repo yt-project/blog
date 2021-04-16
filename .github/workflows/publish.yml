@@ -35,5 +35,5 @@ jobs:
 
             Merging will publish to: https://yt-project.github.io/blog/posts//${{ github.event.issue.title }}
             Closes #${{ github.event.issue.number }}
-          reviewers: "${{ github.repository_owner }}"
+          reviewers: munkm
           commit-message: "post: ${{ github.event.issue.title }}"
