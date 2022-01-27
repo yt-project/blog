@@ -4,7 +4,7 @@ date: 2022-01-27T11:32:15-06:00
 lastmod: 2022-01-27T11:32:15-06:00
 author: Aidan Sochowski
 authorlink: https://github.com/sochowski/
-cover: /img/cover.jpg
+cover: /img/yt_idv_spin/idvcover.png
 categories:
   - development
 tags:
