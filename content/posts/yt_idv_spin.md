@@ -23,7 +23,7 @@ A brief overview of my contributions to yt-idv this past semester.
 This past semester I worked on adding a few new features to [yt-idv](https://github.com/yt-project/yt_idv) through NCSA's [Student Pushing INnovation (SPIN)](http://spin.ncsa.illinois.edu/) internship program. Since I just wrapped up my semester, here's a quick summary of the largest changes I've been working on.
 
 ## Isocontours
-By far the largest feature I was working on this semester was adding isocontours to yt-idv. Isocontours serve as a method to view any level set of your data by simply setting some value and tolerance.
+By far the largest feature I was working on this semester was adding isocontours to yt-idv ([PR #40](https://github.com/yt-project/yt_idv/pull/40)). Isocontours serve as a method to view any level set of your data by simply setting some value and tolerance.
 
 We compute these isocontour layers in a fairly simple way. Currently, all of the fragment shaders in yt-idv utilize some form of ray-tracing to determine the colormap output on the screen. Our isocontour shader does the exact same thing, except it searches for the first vertex in any defined isocontour layer (within the range of some set tolerance), and renders that one on the screen. The user can define up to 32 isocontour layers (essentially an unlimited amount) by clicking "Add Layer" and can change the tolerance using the slider when the isocontour shader is selected.
 
@@ -38,7 +38,7 @@ Here are few examples of isocontours in yt-idv in action:
 *Creating isocontours with multiple layers: this gif shows the process of adding and deleting multiple isocontour layers, demonstrated on the ActiveParticleTwoSphere sample dataset.*
 
 ## Spherical Rendering
-The other main feature I worked on this semester was spherical rendering in yt-idv. Many datasets are natively stored as (r, theta, phi) spherical coordinates rather than as (x, y, z) cartesian coordinates, so it would make sense for yt-idv to support these datasets, letting the user avoid the hassle of converting these datasets to utilize a cartesian coordinate system instead.
+The other main feature I worked on this semester was spherical rendering in yt-idv ([PR #42](https://github.com/yt-project/yt_idv/pull/42)). Many datasets are natively stored as (r, theta, phi) spherical coordinates rather than as (x, y, z) cartesian coordinates, so it would make sense for yt-idv to support these datasets, letting the user avoid the hassle of converting these datasets to utilize a cartesian coordinate system instead.
 
 The rendering approach here is comprised of two steps. The geometry shader essentially converts the coordinates from spherical to cartesian, splitting up what was once a collection of rectangular subsections of (r, theta, phi) into a collection of wedge-shaped subsections of (x, y, z). These are subsequently passed down to our ray-tracing fragment shader, in which we do our standard ray-tracing regimen (with a few spherical to cartesian adjustments) to render fragments onto the screen.
 
