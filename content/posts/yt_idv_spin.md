@@ -23,7 +23,7 @@ A brief overview of my contributions to yt-idv this past semester.
 This past semester I worked on adding a few new features to [yt-idv](https://github.com/yt-project/yt_idv) through NCSA's [Student Pushing INnovation (SPIN)](http://spin.ncsa.illinois.edu/) internship program. Since I just wrapped up my semester, here's a quick summary of the largest changes I've been working on.
 
 ## Isocontours
-By far the largest feature I was working on this semester was adding isocontours to yt-idv. Isocontours serve as a method to view any level set of your data by simply setting some value and tolerance
+By far the largest feature I was working on this semester was adding isocontours to yt-idv. Isocontours serve as a method to view any level set of your data by simply setting some value and tolerance.
 
 We compute these isocontour layers in a fairly simple way. Currently, all of the fragment shaders in yt-idv utilize some form of ray-tracing to determine the colormap output on the screen. Our isocontour shader does the exact same thing, except it searches for the first vertex in any defined isocontour layer (within the range of some set tolerance), and renders that one on the screen. The user can define up to 32 isocontour layers (essentially an unlimited amount) by clicking "Add Layer" and can change the tolerance using the slider when the isocontour shader is selected.
 
