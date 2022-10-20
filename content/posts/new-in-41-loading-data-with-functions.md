@@ -1,6 +1,5 @@
 ---
-title: New in 4.1: Loading data with functions
-date: 2022-09-01T09:00:00-06:00
+title: "New in 4.1: Loading data with functions"
 date: 2022-09-01T09:00:00-06:00
 author: Matthew Turk
 authorlink: https://matthewturk.github.io
@@ -30,7 +29,3 @@ So ... what does that mean? Well, it means that if your data is hidden behind so
 This might not sound like a big deal, but I'm pretty excited about what this will open up. One place we've seen some real potential for it has been in situations where data is easily accessible from an API, but where the act of writing a frontend poses some overhead.
 
 But this also opens up some pretty neat opportunities to do memory-conservative access of data that is stored in familiar file formats, too!
-
-
-
-

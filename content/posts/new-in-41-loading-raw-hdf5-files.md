@@ -1,6 +1,5 @@
 ---
-title: New in 4.1: Loading data with functions
-date: 2022-09-01T09:00:00-06:00
+title: "New in 4.1: Loading data with functions"
 date: 2022-09-01T09:00:00-06:00
 author: Matthew Turk
 authorlink: https://matthewturk.github.io/
