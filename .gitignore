@@ -1,0 +1,5 @@
+# hugo build files
+.hugo_build.lock
+
+# pycharm IDE
+.idea
